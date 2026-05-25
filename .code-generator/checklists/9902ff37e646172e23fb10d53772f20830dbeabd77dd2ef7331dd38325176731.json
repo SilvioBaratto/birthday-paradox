@@ -1,7 +1,7 @@
 [
   {
-    "issue_number": 9,
-    "title": "feat: create reporting/console.py with pretty-printed checkpoint tables and add birthday report subcommand",
+    "issue_number": 16,
+    "title": "feat(gitignore): add output/*.mp4 to .gitignore to prevent large binaries from being committed",
     "tests_passed": true,
     "committed": false,
     "feature_done": false,
@@ -9,8 +9,8 @@
     "professionalized": false
   },
   {
-    "issue_number": 10,
-    "title": "feat: create DI container in di/container.py and refactor CLI to use service wiring",
+    "issue_number": 17,
+    "title": "feat(ci): create GitHub Actions workflow for lint, mypy, pytest on Python 3.10/3.11/3.12 with release artifacts",
     "tests_passed": true,
     "committed": false,
     "feature_done": false,
@@ -18,44 +18,8 @@
     "professionalized": false
   },
   {
-    "issue_number": 11,
-    "title": "feat: add tests/test_probability.py with exact values, monotonicity, and boundary assertions",
-    "tests_passed": true,
-    "committed": false,
-    "feature_done": false,
-    "runtime_verified": true,
-    "professionalized": false
-  },
-  {
-    "issue_number": 12,
-    "title": "feat: add tests/test_simulation.py with empirical convergence to theoretical within 4\u03c3",
-    "tests_passed": true,
-    "committed": false,
-    "feature_done": false,
-    "runtime_verified": true,
-    "professionalized": false
-  },
-  {
-    "issue_number": 13,
-    "title": "feat: add tests/test_visualization.py with batch file existence and size assertions",
-    "tests_passed": true,
-    "committed": false,
-    "feature_done": false,
-    "runtime_verified": true,
-    "professionalized": false
-  },
-  {
-    "issue_number": 14,
-    "title": "feat: implement birthday animate <name> CLI subcommand with DI wiring",
-    "tests_passed": true,
-    "committed": false,
-    "feature_done": false,
-    "runtime_verified": true,
-    "professionalized": false
-  },
-  {
-    "issue_number": 15,
-    "title": "feat: extend tests/test_cli.py with CliRunner smoke tests for all subcommands",
+    "issue_number": 18,
+    "title": "feat(docs): update README to v1.1 with MP4 links, imageio-ffmpeg docs, and birthday animate examples",
     "tests_passed": true,
     "committed": false,
     "feature_done": false,

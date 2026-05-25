@@ -1,8 +1,8 @@
 {
   "mode": "multi-cycle",
   "started_at": "2026-05-25T10:54:46Z",
-  "updated_at": "2026-05-25T13:57:15Z",
-  "current_cycle": 3,
+  "updated_at": "2026-05-25T14:19:27Z",
+  "current_cycle": 4,
   "cycles": [
     {
       "id": 1,
@@ -393,8 +393,8 @@
       "name": "Reporting, DI & Tests",
       "milestone_number": 3,
       "milestone_title": "Cycle 3 \u2014 Reporting, DI & Tests",
-      "status": "open",
-      "phase": 65,
+      "status": "completed",
+      "phase": 7,
       "issues": [
         {
           "number": 9,
@@ -566,17 +566,28 @@
           "cache_write_1h": 0,
           "compaction_events": 0,
           "clear_events": 0
+        },
+        "phase7": {
+          "input": 35744,
+          "output": 1214,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 1,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
         }
       },
       "started_at": "2026-05-25T13:03:25Z",
-      "finished_at": null,
+      "finished_at": "2026-05-25T13:57:36Z",
       "cache_telemetry": {
-        "input": 14708953,
-        "output": 73200,
+        "input": 14744697,
+        "output": 74414,
         "cache_read": 0,
         "cache_write": 0,
         "cache_hit_pct": 0.0,
-        "wall_seconds": 3199.495730915005
+        "wall_seconds": 3217.1585707070044
       },
       "phase2_batch_id": null,
       "ollama_model": "kimi-k2.6:cloud",
@@ -609,11 +620,54 @@
     {
       "id": 4,
       "name": "CI & Documentation",
-      "milestone_number": null,
+      "milestone_number": 4,
       "milestone_title": "Cycle 4 \u2014 CI & Documentation",
       "status": "open",
-      "phase": 0,
-      "issues": [],
+      "phase": 65,
+      "issues": [
+        {
+          "number": 16,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:medium",
+            "area:infra",
+            "phase:implement",
+            "agent:python-pro"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat(gitignore): add output/*.mp4 to .gitignore to prevent large binaries from being committed"
+        },
+        {
+          "number": 17,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:high",
+            "area:infra",
+            "phase:implement",
+            "agent:python-pro"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat(ci): create GitHub Actions workflow for lint, mypy, pytest on Python 3.10/3.11/3.12 with release artifacts"
+        },
+        {
+          "number": 18,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:medium",
+            "area:docs",
+            "phase:implement",
+            "agent:python-pro"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat(docs): update README to v1.1 with MP4 links, imageio-ffmpeg docs, and birthday animate examples"
+        }
+      ],
       "commit_sha": null,
       "depends_on": [
         3
@@ -625,25 +679,99 @@
           "effort": "low"
         }
       ],
-      "base_commit": null,
-      "token_usage": {},
-      "started_at": null,
+      "base_commit": "3e5f79a4b95d685b984ebb4514203544a5e756b4",
+      "token_usage": {
+        "phase1": {
+          "input": 547434,
+          "output": 6595,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 21,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase2": {
+          "input": 195051,
+          "output": 3735,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 20,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase3_4": {
+          "input": 2270320,
+          "output": 11372,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 54,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase5": {
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 0,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase6": {
+          "input": 532928,
+          "output": 1227,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 19,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        }
+      },
+      "started_at": "2026-05-25T13:57:39Z",
       "finished_at": null,
       "cache_telemetry": {
-        "input": 0,
-        "output": 0,
+        "input": 3545733,
+        "output": 22929,
         "cache_read": 0,
         "cache_write": 0,
         "cache_hit_pct": 0.0,
-        "wall_seconds": 0
+        "wall_seconds": 1280.6599015830434
       },
       "phase2_batch_id": null,
       "ollama_model": "kimi-k2.6:cloud",
       "gemini_model": null,
       "codex_model": null,
-      "cache_prewarmed": false,
-      "cache_ttl_probe": null,
-      "phase6_5": null,
+      "cache_prewarmed": true,
+      "cache_ttl_probe": "5m",
+      "phase6_5": {
+        "attempt": 0,
+        "last_tier": "DONE",
+        "tiers_passed": [
+          "T0"
+        ],
+        "tiers_failed": [
+          "T1",
+          "T2"
+        ],
+        "tiers_skipped": [
+          "T3",
+          "T4"
+        ],
+        "skip_reasons": {
+          "T3": "no frontend",
+          "T4": "no docker"
+        }
+      },
       "vigil_triggered": false,
       "phase8": null
     }
@@ -671,7 +799,7 @@
     }
   },
   "session_mode": "shared",
-  "client_alive_at": "2026-05-25T13:03:26+00:00",
+  "client_alive_at": "2026-05-25T13:57:40+00:00",
   "phase2_batch_id": null,
   "repo": {
     "host": "github.com",

@@ -1,7 +1,3 @@
-- #9 [priority:high] feat: create reporting/console.py with pretty-printed checkpoint tables and add birthday report subcommand — agent: python-pro
-- #10 [priority:high] feat: create DI container in di/container.py and refactor CLI to use service wiring — agent: python-pro
-- #11 [priority:high] feat: add tests/test_probability.py with exact values, monotonicity, and boundary assertions — agent: python-pro
-- #12 [priority:high] feat: add tests/test_simulation.py with empirical convergence to theoretical within 4σ — agent: python-pro
-- #13 [priority:high] feat: add tests/test_visualization.py with batch file existence and size assertions — agent: python-pro
-- #14 [priority:high] feat: implement birthday animate <name> CLI subcommand with DI wiring — agent: python-pro
-- #15 [priority:high] feat: extend tests/test_cli.py with CliRunner smoke tests for all subcommands — agent: python-pro
+- #16 [priority:medium] feat(gitignore): add output/*.mp4 to .gitignore to prevent large binaries from being committed — agent: python-pro
+- #17 [priority:high] feat(ci): create GitHub Actions workflow for lint, mypy, pytest on Python 3.10/3.11/3.12 with release artifacts — agent: python-pro
+- #18 [priority:medium] feat(docs): update README to v1.1 with MP4 links, imageio-ffmpeg docs, and birthday animate examples — agent: python-pro

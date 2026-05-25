@@ -1,6 +1,6 @@
 # Birthday Paradox
 
-A probabilistic study of the **Birthday Paradox** using exact combinatorics, asymptotic approximations, and Monte Carlo simulation — with animated visualizations.
+A probabilistic study of the **Birthday Paradox** using exact combinatorics, asymptotic approximations, and Monte Carlo simulation — with animated visualizations (v1.1).
 
 <p align="center">
   <img src="output/room_filling.gif" alt="Room filling animation" width="700">
@@ -120,6 +120,8 @@ The exact curve and the Taylor approximation are visually identical for any prac
   <img src="output/probability_buildup.gif" alt="Probability building" width="700">
 </p>
 
+[Download MP4](https://github.com/SilvioBaratto/birthday-paradox/releases/download/v1.1.0/probability_buildup.mp4)
+
 ### Simulation vs theory
 
 <p align="center">
@@ -136,6 +138,16 @@ Monte Carlo agrees with the exact curve to within sampling noise (≈ `1/√tria
 
 Running estimate of `P(match)` for `n = 23` converging to the exact value `≈ 0.5073`.
 
+[Download MP4](https://github.com/SilvioBaratto/birthday-paradox/releases/download/v1.1.0/convergence.mp4)
+
+### Room filling animation
+
+<p align="center">
+  <img src="output/room_filling.gif" alt="Room filling animation" width="700">
+</p>
+
+[Download MP4](https://github.com/SilvioBaratto/birthday-paradox/releases/download/v1.1.0/room_filling.mp4)
+
 ### Expected pairs and distinct birthdays
 
 <p align="center">
@@ -150,6 +162,16 @@ Running estimate of `P(match)` for `n = 23` converging to the exact value `≈ 0
 
 Distribution over the **index** of the person who first collides — analytical PMF overlaid on Monte Carlo histogram.
 
+### k-collision animation
+
+<p align="center">
+  <img src="output/k_collision_animation.gif" alt="k-collision animation" width="700">
+</p>
+
+Probability that at least `k` people share a birthday as group size increases.
+
+[Download MP4](https://github.com/SilvioBaratto/birthday-paradox/releases/download/v1.1.0/k_collision_animation.mp4)
+
 ## Installation
 
 ```bash
@@ -158,6 +180,8 @@ cd birthday-paradox
 python -m venv .venv && source .venv/bin/activate
 pip install -e .
 ```
+
+MP4 animation export uses `imageio-ffmpeg`, which bundles its own FFmpeg binary on most platforms. No separate FFmpeg install is required. If the bundled binary is unavailable on your system, install the system `ffmpeg` package and the code falls back to it automatically.
 
 ## Usage
 
@@ -168,11 +192,24 @@ birthday analyze -n 23
 # Monte Carlo for n = 23 with 100 000 trials
 birthday simulate -n 23 -t 100000
 
+# Checkpoint probability table
+birthday report
+
+# Render a single animation by name
+birthday animate probability_buildup
+birthday animate room_filling
+birthday animate convergence
+birthday animate k_collision
+
 # Just the PNG plots (no GIFs)
 birthday plot --no-animations
 
 # Everything: plots + GIFs (takes ~20–60s)
 birthday all -t 5000
+
+# Skip MP4 generation (only GIFs)
+birthday all -t 5000 --no-mp4
+birthday plot -t 5000 --no-mp4
 ```
 
 Custom universes:
@@ -193,7 +230,10 @@ birthday-paradox/
 │   ├── core/                  # Frozen config + result dataclasses
 │   ├── math/                  # Closed-form probability formulas
 │   ├── simulation/            # Monte Carlo simulator
-│   ├── visualization/         # Matplotlib plots + FuncAnimation GIFs
+│   ├── visualization/         # Matplotlib plots + FuncAnimation GIFs + MP4s
+│   │   └── writers.py         # Animation writer abstraction (Pillow + FFmpeg)
+│   ├── reporting/             # Pretty-printed checkpoint tables
+│   ├── di/                    # Dependency injection container
 │   └── cli.py                 # Click CLI
 ├── tests/
 ├── output/                    # Generated plots and animations

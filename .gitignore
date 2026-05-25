@@ -203,6 +203,9 @@ cython_debug/
 # Temporary file for partial code execution
 tempCodeRunnerFile.py
 
+# Generated animations (large binaries; built on demand via `birthday all`)
+output/*.mp4
+
 # Ruff stuff:
 .ruff_cache/
 
