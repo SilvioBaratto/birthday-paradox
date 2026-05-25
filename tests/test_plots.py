@@ -71,18 +71,18 @@ class TestPlotKCollisionCurves:
 class TestAnimateKCollision:
     def test_returns_path_when_save_true(self, viz: MatplotlibVisualizer) -> None:
         result = viz.animate_k_collision(save=True, n_trials=100, fps=2)
-        assert result is not None
-        assert result.name == "k_collision_animation.gif"
-        assert result.exists()
+        assert len(result) >= 1
+        assert result[0].name == "k_collision_animation.gif"
+        assert result[0].exists()
 
-    def test_returns_none_when_save_false(self, viz: MatplotlibVisualizer) -> None:
+    def test_returns_empty_list_when_save_false(self, viz: MatplotlibVisualizer) -> None:
         result = viz.animate_k_collision(save=False, n_trials=100, fps=2)
-        assert result is None
+        assert result == []
 
     def test_file_has_content(self, viz: MatplotlibVisualizer) -> None:
         result = viz.animate_k_collision(save=True, n_trials=100, fps=2)
-        assert result is not None
-        assert result.stat().st_size > 0
+        assert len(result) >= 1
+        assert result[0].stat().st_size > 0
 
     @patch.object(BirthdayProbability, "prob_at_least_k_share", return_value=0.05)
     @patch.object(BirthdayProbability, "prob_match_exact", return_value=0.5)
@@ -103,8 +103,9 @@ class TestAnimateKCollision:
         ) as mock_writer:
             viz.animate_k_collision(save=True, n_trials=100, fps=2)
             mock_writer.assert_called()
-            call_path = mock_writer.call_args[0][0]
-            assert str(call_path).endswith(".gif")
+            gif_call = [c for c in mock_writer.call_args_list
+                        if str(c[0][0]).endswith(".gif")]
+            assert len(gif_call) >= 1
 
 
 class TestPlotApproximationError:

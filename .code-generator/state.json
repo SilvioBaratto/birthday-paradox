@@ -1,16 +1,16 @@
 {
   "mode": "multi-cycle",
   "started_at": "2026-05-25T10:54:46Z",
-  "updated_at": "2026-05-25T11:50:29Z",
-  "current_cycle": 1,
+  "updated_at": "2026-05-25T13:02:54Z",
+  "current_cycle": 2,
   "cycles": [
     {
       "id": 1,
       "name": "Visualization v1.1",
       "milestone_number": 1,
       "milestone_title": "Cycle 1 \u2014 Visualization v1.1",
-      "status": "open",
-      "phase": 65,
+      "status": "completed",
+      "phase": 7,
       "issues": [
         {
           "number": 1,
@@ -149,17 +149,28 @@
           "cache_write_1h": 0,
           "compaction_events": 0,
           "clear_events": 0
+        },
+        "phase7": {
+          "input": 38161,
+          "output": 4402,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 1,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
         }
       },
       "started_at": "2026-05-25T11:11:06Z",
-      "finished_at": null,
+      "finished_at": "2026-05-25T11:51:43Z",
       "cache_telemetry": {
-        "input": 11163765,
-        "output": 81999,
+        "input": 11201926,
+        "output": 86401,
         "cache_read": 0,
         "cache_write": 0,
         "cache_hit_pct": 0.0,
-        "wall_seconds": 2132.239735458017
+        "wall_seconds": 2203.529407333015
       },
       "phase2_batch_id": null,
       "ollama_model": "kimi-k2.6:cloud",
@@ -193,11 +204,68 @@
     {
       "id": 2,
       "name": "MP4 Export & CLI",
-      "milestone_number": null,
+      "milestone_number": 2,
       "milestone_title": "Cycle 2 \u2014 MP4 Export & CLI",
       "status": "open",
-      "phase": 0,
-      "issues": [],
+      "phase": 65,
+      "issues": [
+        {
+          "number": 5,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:high",
+            "phase:implement",
+            "agent:python-pro",
+            "area:visualization"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: configure AnimationWriter for MP4 production settings and ffmpeg discovery"
+        },
+        {
+          "number": 6,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:high",
+            "phase:implement",
+            "agent:python-pro",
+            "area:visualization"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: emit both GIF and MP4 from all animation methods"
+        },
+        {
+          "number": 7,
+          "status": "open",
+          "agent": "python-pro",
+          "labels": [
+            "priority:medium",
+            "area:cli",
+            "phase:implement",
+            "agent:python-pro"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: add --no-mp4 flag to birthday plot and birthday all"
+        },
+        {
+          "number": 8,
+          "status": "open",
+          "agent": "python-pro",
+          "labels": [
+            "priority:medium",
+            "area:cli",
+            "phase:implement",
+            "agent:python-pro"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: add birthday animate <name> CLI subcommand"
+        }
+      ],
       "commit_sha": null,
       "depends_on": [
         1
@@ -213,25 +281,99 @@
           "effort": "low"
         }
       ],
-      "base_commit": null,
-      "token_usage": {},
-      "started_at": null,
+      "base_commit": "cd79973ae2625c2fd9636fd467bab72b69b27774",
+      "token_usage": {
+        "phase1": {
+          "input": 445589,
+          "output": 7173,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 22,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase2": {
+          "input": 258377,
+          "output": 5563,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 18,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase3_4": {
+          "input": 7133544,
+          "output": 43992,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 100,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase5": {
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 0,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase6": {
+          "input": 404759,
+          "output": 1129,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 13,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        }
+      },
+      "started_at": "2026-05-25T11:51:46Z",
       "finished_at": null,
       "cache_telemetry": {
-        "input": 0,
-        "output": 0,
+        "input": 8242269,
+        "output": 57857,
         "cache_read": 0,
         "cache_write": 0,
         "cache_hit_pct": 0.0,
-        "wall_seconds": 0
+        "wall_seconds": 1851.6612762919976
       },
       "phase2_batch_id": null,
       "ollama_model": "kimi-k2.6:cloud",
       "gemini_model": null,
       "codex_model": null,
-      "cache_prewarmed": false,
-      "cache_ttl_probe": null,
-      "phase6_5": null,
+      "cache_prewarmed": true,
+      "cache_ttl_probe": "5m",
+      "phase6_5": {
+        "attempt": 0,
+        "last_tier": "DONE",
+        "tiers_passed": [
+          "T0"
+        ],
+        "tiers_failed": [
+          "T1",
+          "T2"
+        ],
+        "tiers_skipped": [
+          "T3",
+          "T4"
+        ],
+        "skip_reasons": {
+          "T3": "no frontend",
+          "T4": "no docker"
+        }
+      },
       "vigil_triggered": false,
       "phase8": null
     },
@@ -345,7 +487,7 @@
     }
   },
   "session_mode": "shared",
-  "client_alive_at": "2026-05-25T11:11:07+00:00",
+  "client_alive_at": "2026-05-25T11:51:47+00:00",
   "phase2_batch_id": null,
   "repo": {
     "host": "github.com",

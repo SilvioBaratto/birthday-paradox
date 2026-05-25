@@ -1,7 +1,7 @@
 [
   {
-    "issue_number": 1,
-    "title": "feat: create AnimationWriter abstraction in visualization/writers.py",
+    "issue_number": 5,
+    "title": "feat: configure AnimationWriter for MP4 production settings and ffmpeg discovery",
     "tests_passed": true,
     "committed": false,
     "feature_done": false,
@@ -9,8 +9,8 @@
     "professionalized": false
   },
   {
-    "issue_number": 2,
-    "title": "feat: add k-collision curves and approximation error static plots",
+    "issue_number": 6,
+    "title": "feat: emit both GIF and MP4 from all animation methods",
     "tests_passed": true,
     "committed": false,
     "feature_done": false,
@@ -18,21 +18,21 @@
     "professionalized": false
   },
   {
-    "issue_number": 3,
-    "title": "feat: add k-collision frame-by-frame GIF animation",
-    "tests_passed": true,
+    "issue_number": 7,
+    "title": "feat: add --no-mp4 flag to birthday plot and birthday all",
+    "tests_passed": false,
     "committed": false,
     "feature_done": false,
-    "runtime_verified": true,
+    "runtime_verified": false,
     "professionalized": false
   },
   {
-    "issue_number": 4,
-    "title": "feat: wire new visualizations into create_all and CLI",
-    "tests_passed": true,
+    "issue_number": 8,
+    "title": "feat: add birthday animate <name> CLI subcommand",
+    "tests_passed": false,
     "committed": false,
     "feature_done": false,
-    "runtime_verified": true,
+    "runtime_verified": false,
     "professionalized": false
   }
 ]

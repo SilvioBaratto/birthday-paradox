@@ -93,8 +93,10 @@ def simulate(days: int, max_people: int, people: int, trials: int, seed: int) ->
 @click.option("-t", "--trials", default=5000, show_default=True, help="MC trials for plots")
 @click.option("--seed", default=42, show_default=True)
 @click.option("--no-animations", is_flag=True, help="Skip GIF animations")
+@click.option("--no-mp4", is_flag=True, help="Skip MP4 animations")
 def plot(
-    days: int, max_people: int, output: Path, trials: int, seed: int, no_animations: bool,
+    days: int, max_people: int, output: Path, trials: int, seed: int,
+    no_animations: bool, no_mp4: bool,
 ) -> None:
     """Generate all PNG plots (and GIF animations unless --no-animations)."""
     config = BirthdayConfig(days_per_year=days, max_people=max_people)
@@ -113,14 +115,13 @@ def plot(
             paths.append(p)
 
     if not no_animations:
-        for p in (
-            viz.animate_probability_buildup(),
-            viz.animate_room_filling(),
-            viz.animate_simulation_convergence(max_trials=trials),
-            viz.animate_k_collision(n_trials=trials),
+        for method_paths in (
+            viz.animate_probability_buildup(no_mp4=no_mp4),
+            viz.animate_room_filling(no_mp4=no_mp4),
+            viz.animate_simulation_convergence(max_trials=trials, no_mp4=no_mp4),
+            viz.animate_k_collision(n_trials=trials, no_mp4=no_mp4),
         ):
-            if p is not None:
-                paths.append(p)
+            paths.extend(method_paths)
 
     click.echo("")
     click.echo(f"Generated {len(paths)} files in {output}:")
@@ -136,7 +137,8 @@ def plot(
 )
 @click.option("-t", "--trials", default=5000, show_default=True)
 @click.option("--seed", default=42, show_default=True)
-def all(days: int, max_people: int, output: Path, trials: int, seed: int) -> None:
+@click.option("--no-mp4", is_flag=True, help="Skip MP4 animations")
+def all(days: int, max_people: int, output: Path, trials: int, seed: int, no_mp4: bool) -> None:
     """Run analyze + plot + animations end-to-end."""
     config = BirthdayConfig(days_per_year=days, max_people=max_people)
     prob = BirthdayProbability(config)
@@ -144,7 +146,7 @@ def all(days: int, max_people: int, output: Path, trials: int, seed: int) -> Non
 
     click.echo(f"\nMedian (50%) group size: {prob.median_group_size()}")
     click.echo(f"Generating plots + animations in {output} ...\n")
-    produced = viz.create_all(n_trials=trials)
+    produced = viz.create_all(n_trials=trials, no_mp4=no_mp4)
     click.echo("")
     click.echo(f"Done — {len(produced)} files written:")
     for p in produced:

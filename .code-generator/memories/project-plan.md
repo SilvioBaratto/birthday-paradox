@@ -1,4 +1,4 @@
-- #1 [priority:high] feat: create AnimationWriter abstraction in visualization/writers.py — agent: python-pro
-- #2 [priority:high] feat: add k-collision curves and approximation error static plots — agent: python-pro
-- #3 [priority:high] feat: add k-collision frame-by-frame GIF animation — agent: python-pro
-- #4 [priority:medium] feat: wire new visualizations into create_all and CLI — agent: python-pro
+- #5 [priority:high] feat: configure AnimationWriter for MP4 production settings and ffmpeg discovery — agent: python-pro
+- #6 [priority:high] feat: emit both GIF and MP4 from all animation methods — agent: python-pro
+- #7 [priority:medium] feat: add --no-mp4 flag to birthday plot and birthday all — agent: python-pro
+- #8 [priority:medium] feat: add birthday animate <name> CLI subcommand — agent: python-pro

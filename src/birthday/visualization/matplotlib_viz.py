@@ -71,6 +71,21 @@ class MatplotlibVisualizer:
             logger.warning(f"Could not save animation: {exc}")
             return None
 
+    def _save_both(
+        self, anim: animation.FuncAnimation, gif_path: Path, fps: int, no_mp4: bool,
+    ) -> list[Path]:
+        """Save animation as GIF and optionally MP4; return all successful paths."""
+        paths: list[Path] = []
+        gif_result = self._save_animation(anim, gif_path, fps)
+        if gif_result is not None:
+            paths.append(gif_result)
+        if not no_mp4:
+            mp4_path = gif_path.with_suffix(".mp4")
+            mp4_result = self._save_animation(anim, mp4_path, fps)
+            if mp4_result is not None:
+                paths.append(mp4_result)
+        return paths
+
     # ------------------------------------------------------------------
     # Static plots
     # ------------------------------------------------------------------
@@ -337,8 +352,8 @@ class MatplotlibVisualizer:
     # ------------------------------------------------------------------
 
     def animate_probability_buildup(
-        self, fps: int = 8, save: bool = True,
-    ) -> Path | None:
+        self, fps: int = 8, save: bool = True, no_mp4: bool = False,
+    ) -> list[Path]:
         """GIF: probability curve drawing itself frame-by-frame."""
         self._apply_style()
         ns, exact, approx = self._prob.probability_curve()
@@ -388,17 +403,18 @@ class MatplotlibVisualizer:
             fig, update, init_func=init, frames=len(ns), interval=1000 // fps, blit=True,
         )
 
-        path: Path | None = None
+        paths: list[Path] = []
         if save:
-            path = self._save_animation(
-                anim, self._output_dir / "probability_buildup.gif", fps,
+            paths = self._save_both(
+                anim, self._output_dir / "probability_buildup.gif", fps, no_mp4,
             )
         plt.close(fig)
-        return path
+        return paths
 
     def animate_room_filling(
-        self, group_size: int = 30, fps: int = 4, save: bool = True, seed: int | None = 7,
-    ) -> Path | None:
+        self, group_size: int = 30, fps: int = 4, save: bool = True,
+        seed: int | None = 7, no_mp4: bool = False,
+    ) -> list[Path]:
         """
         GIF: people enter a room one at a time, each gets a random birthday;
         the first collision is highlighted with a flash.
@@ -506,18 +522,18 @@ class MatplotlibVisualizer:
             interval=1000 // fps, blit=False, repeat=False,
         )
 
-        path: Path | None = None
+        paths: list[Path] = []
         if save:
-            path = self._save_animation(
-                anim, self._output_dir / "room_filling.gif", fps,
+            paths = self._save_both(
+                anim, self._output_dir / "room_filling.gif", fps, no_mp4,
             )
         plt.close(fig)
-        return path
+        return paths
 
     def animate_simulation_convergence(
         self, group_size: int = 23, max_trials: int = 5000,
-        snapshots: int = 60, fps: int = 8, save: bool = True,
-    ) -> Path | None:
+        snapshots: int = 60, fps: int = 8, save: bool = True, no_mp4: bool = False,
+    ) -> list[Path]:
         """
         GIF: running empirical estimate of P(match) for fixed n approaching theory.
         """
@@ -568,17 +584,17 @@ class MatplotlibVisualizer:
             interval=1000 // fps, blit=True, repeat=False,
         )
 
-        path: Path | None = None
+        paths: list[Path] = []
         if save:
-            path = self._save_animation(
-                anim, self._output_dir / "convergence.gif", fps,
+            paths = self._save_both(
+                anim, self._output_dir / "convergence.gif", fps, no_mp4,
             )
         plt.close(fig)
-        return path
+        return paths
 
     def animate_k_collision(
-        self, n_trials: int = 5000, fps: int = 8, save: bool = True,
-    ) -> Path | None:
+        self, n_trials: int = 5000, fps: int = 8, save: bool = True, no_mp4: bool = False,
+    ) -> list[Path]:
         """GIF: k-collision curves drawing themselves frame-by-frame."""
         self._apply_style()
         ns, curves, ks, colors = self._compute_k_curves(n_trials)
@@ -626,19 +642,19 @@ class MatplotlibVisualizer:
             fig, update, init_func=init, frames=len(ns),
             interval=1000 // fps, blit=True,
         )
-        path: Path | None = None
+        paths: list[Path] = []
         if save:
-            path = self._save_animation(
-                anim, self._output_dir / "k_collision_animation.gif", fps,
+            paths = self._save_both(
+                anim, self._output_dir / "k_collision_animation.gif", fps, no_mp4,
             )
         plt.close(fig)
-        return path
+        return paths
 
     # ------------------------------------------------------------------
     # Batch
     # ------------------------------------------------------------------
 
-    def create_all(self, n_trials: int = 5000) -> list[Path]:
+    def create_all(self, n_trials: int = 5000, no_mp4: bool = False) -> list[Path]:
         """Generate every static plot and animation."""
         produced: list[Path] = []
         for p in (
@@ -648,10 +664,10 @@ class MatplotlibVisualizer:
             self.plot_first_collision_distribution(n_trials=max(n_trials, 20000)),
             self.plot_k_collision_curves(n_trials=max(n_trials, 50000)),
             self.plot_approximation_error(),
-            self.animate_probability_buildup(),
-            self.animate_room_filling(),
-            self.animate_simulation_convergence(max_trials=n_trials),
-            self.animate_k_collision(n_trials=n_trials),
+            *self.animate_probability_buildup(no_mp4=no_mp4),
+            *self.animate_room_filling(no_mp4=no_mp4),
+            *self.animate_simulation_convergence(max_trials=n_trials, no_mp4=no_mp4),
+            *self.animate_k_collision(n_trials=n_trials, no_mp4=no_mp4),
         ):
             if p is not None:
                 produced.append(p)
