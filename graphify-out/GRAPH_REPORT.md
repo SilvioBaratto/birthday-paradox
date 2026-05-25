@@ -1,16 +1,16 @@
 # Graph Report - birthday-paradox  (2026-05-25)
 
 ## Corpus Check
-- 43 files · ~102,230 words
+- 43 files · ~103,875 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 579 nodes · 848 edges · 49 communities (42 shown, 7 thin omitted)
-- Extraction: 68% EXTRACTED · 32% INFERRED · 0% AMBIGUOUS · INFERRED: 274 edges (avg confidence: 0.67)
+- 618 nodes · 887 edges · 50 communities (42 shown, 8 thin omitted)
+- Extraction: 69% EXTRACTED · 31% INFERRED · 0% AMBIGUOUS · INFERRED: 274 edges (avg confidence: 0.67)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3b5a8868`
+- Built from commit: `185e03dd`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -49,8 +49,10 @@
 - [[_COMMUNITY_Community 32|Community 32]]
 - [[_COMMUNITY_Community 33|Community 33]]
 - [[_COMMUNITY_Community 34|Community 34]]
+- [[_COMMUNITY_Community 37|Community 37]]
 - [[_COMMUNITY_Community 47|Community 47]]
 - [[_COMMUNITY_Community 48|Community 48]]
+- [[_COMMUNITY_Community 49|Community 49]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `BirthdayConfig` - 92 edges
@@ -59,10 +61,10 @@
 4. `AnimationWriter` - 38 edges
 5. `Container` - 34 edges
 6. `MonteCarloSimulator` - 33 edges
-7. `ConsoleReporter` - 17 edges
-8. `TestContainerOverrides` - 15 edges
-9. `TestReadmeV11` - 15 edges
-10. `prompt_hashes` - 14 edges
+7. `Communities (49 total, 7 thin omitted)` - 30 edges
+8. `ConsoleReporter` - 17 edges
+9. `TestContainerOverrides` - 15 edges
+10. `TestReadmeV11` - 15 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `config()` --calls--> `BirthdayConfig`  [INFERRED]
@@ -76,15 +78,15 @@
 - `test_uses_probability_curve()` --calls--> `MatplotlibVisualizer`  [INFERRED]
   tests/test_plots.py → src/birthday/visualization/matplotlib_viz.py
 
-## Communities (49 total, 7 thin omitted)
+## Communities (50 total, 8 thin omitted)
 
 ### Community 0 - "Community 0"
 Cohesion: 0.08
 Nodes (24): base_commit, cache_prewarmed, cache_ttl_probe, client_alive_at, codex_model, current_cycle, cycles, effort_hints (+16 more)
 
 ### Community 1 - "Community 1"
-Cohesion: 0.15
-Nodes (10): Overlay Monte Carlo empirical curve on the exact theoretical curve., Overlay Monte Carlo empirical curve on the exact theoretical curve., E[# matching pairs] vs n., E[# matching pairs] vs n., Histogram of the group-size index where the first collision appears., Histogram of the group-size index where the first collision appears., Absolute error |exact − Taylor approx| vs n., Generate every static plot and animation. (+2 more)
+Cohesion: 0.16
+Nodes (9): Overlay Monte Carlo empirical curve on the exact theoretical curve., Overlay Monte Carlo empirical curve on the exact theoretical curve., E[# matching pairs] vs n., E[# matching pairs] vs n., Histogram of the group-size index where the first collision appears., Histogram of the group-size index where the first collision appears., Absolute error |exact − Taylor approx| vs n., Generate every static plot and animation. (+1 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.05
@@ -107,7 +109,7 @@ Cohesion: 0.4
 Nodes (5): repo, full, host, name, owner
 
 ### Community 11 - "Community 11"
-Cohesion: 0.07
+Cohesion: 0.08
 Nodes (14): Real file creation tests for dual format., TestIntegrationDualFormat, Tests for the AnimationWriter abstraction., TestAnimationWriterInit, TestDiscoverFfmpeg, TestGetWriter, TestSupports, TestTryFfmpeg (+6 more)
 
 ### Community 12 - "Community 12"
@@ -143,8 +145,8 @@ Cohesion: 0.15
 Nodes (8): config(), Tests for static plot methods in MatplotlibVisualizer., test_calls_prob_methods(), test_max_error_below_threshold_for_d365(), test_max_n_respects_config(), test_uses_probability_curve(), TestPlotKCollisionCurves, viz()
 
 ### Community 20 - "Community 20"
-Cohesion: 0.18
-Nodes (7): GIF: probability curve drawing itself frame-by-frame., GIF: people enter a room one at a time, each gets a random birthday;         the, GIF: probability curve drawing itself frame-by-frame., GIF: people enter a room one at a time, each gets a random birthday;         the, GIF: running empirical estimate of P(match) for fixed n approaching theory., Save an animation using the configured writer; return path or None on failure., Save animation as GIF and optionally MP4; return all successful paths.
+Cohesion: 0.22
+Nodes (6): GIF: probability curve drawing itself frame-by-frame., GIF: people enter a room one at a time, each gets a random birthday;         the, GIF: probability curve drawing itself frame-by-frame., GIF: people enter a room one at a time, each gets a random birthday;         the, GIF: running empirical estimate of P(match) for fixed n approaching theory., Save animation as GIF and optionally MP4; return all successful paths.
 
 ### Community 21 - "Community 21"
 Cohesion: 0.18
@@ -194,20 +196,24 @@ Nodes (5): base_url, entry_cmd, requirements_hash, scenarios, tiers
 Cohesion: 0.33
 Nodes (3): Pre-compute k-collision probability curves for k = 2..5., P(≥ k share a birthday) vs n for k = 2..5., GIF: k-collision curves drawing themselves frame-by-frame.
 
+### Community 37 - "Community 37"
+Cohesion: 0.05
+Nodes (39): Communities (49 total, 7 thin omitted), Community 0 - "Community 0", Community 11 - "Community 11", Community 12 - "Community 12", Community 13 - "Community 13", Community 14 - "Community 14", Community 15 - "Community 15", Community 16 - "Community 16" (+31 more)
+
 ## Knowledge Gaps
-- **228 isolated node(s):** `mode`, `started_at`, `updated_at`, `current_cycle`, `cycles` (+223 more)
+- **265 isolated node(s):** `mode`, `started_at`, `updated_at`, `current_cycle`, `cycles` (+260 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `BirthdayConfig` connect `Community 3` to `Community 33`, `Community 34`, `Community 2`, `Community 4`, `Community 11`, `Community 13`, `Community 15`, `Community 19`, `Community 22`, `Community 29`?**
-  _High betweenness centrality (0.142) - this node is a cross-community bridge._
-- **Why does `MatplotlibVisualizer` connect `Community 22` to `Community 32`, `Community 1`, `Community 33`, `Community 34`, `Community 2`, `Community 3`, `Community 4`, `Community 7`, `Community 11`, `Community 13`, `Community 15`, `Community 19`, `Community 20`, `Community 29`?**
-  _High betweenness centrality (0.139) - this node is a cross-community bridge._
-- **Why does `BirthdayProbability` connect `Community 3` to `Community 33`, `Community 34`, `Community 2`, `Community 4`, `Community 5`, `Community 11`, `Community 19`, `Community 22`?**
-  _High betweenness centrality (0.082) - this node is a cross-community bridge._
+  _High betweenness centrality (0.124) - this node is a cross-community bridge._
+- **Why does `MatplotlibVisualizer` connect `Community 22` to `Community 32`, `Community 1`, `Community 33`, `Community 34`, `Community 4`, `Community 2`, `Community 3`, `Community 7`, `Community 11`, `Community 13`, `Community 15`, `Community 49`, `Community 19`, `Community 20`, `Community 29`?**
+  _High betweenness centrality (0.122) - this node is a cross-community bridge._
+- **Why does `BirthdayProbability` connect `Community 3` to `Community 33`, `Community 34`, `Community 2`, `Community 4`, `Community 5`, `Community 19`, `Community 22`?**
+  _High betweenness centrality (0.072) - this node is a cross-community bridge._
 - **Are the 89 inferred relationships involving `BirthdayConfig` (e.g. with `TestPlotKCollisionCurves` and `TestAnimateKCollision`) actually correct?**
   _`BirthdayConfig` has 89 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 45 inferred relationships involving `MatplotlibVisualizer` (e.g. with `TestPlotKCollisionCurves` and `TestAnimateKCollision`) actually correct?**
