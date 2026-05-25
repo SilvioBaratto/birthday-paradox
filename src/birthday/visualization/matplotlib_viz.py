@@ -96,34 +96,46 @@ class MatplotlibVisualizer:
         ns, exact, approx = self._prob.probability_curve()
         median_n = self._prob.median_group_size()
 
-        fig, ax = plt.subplots(figsize=(11, 6.5))
-        ax.plot(ns, exact, "b-", lw=2.2, label="Exact: $1 - \\frac{D!}{D^n (D-n)!}$")
+        fig, ax = plt.subplots(figsize=(11, 6.5), constrained_layout=True)
+        ax.plot(ns, exact, "b-", lw=2.4, label="Exact:  $1 - D!\\,/\\,(D^{n}(D-n)!)$")
         ax.plot(
             ns, approx, "r--", lw=1.8, alpha=0.85,
-            label="Approx: $1 - e^{-n(n-1)/2D}$",
+            label="Approx:  $1 - e^{-n(n-1)/2D}$",
         )
-        ax.axhline(0.5, color="green", ls=":", alpha=0.7, label="50% threshold")
-        ax.axhline(0.99, color="purple", ls=":", alpha=0.5, label="99% threshold")
-        ax.axvline(
-            median_n, color="green", ls="--", alpha=0.6,
-            label=f"n = {median_n} (50% point)",
+        ax.fill_between(ns, exact, approx, color="gray", alpha=0.12, label="Approx. gap")
+        ax.axhline(0.5, color="green", ls=":", alpha=0.7)
+        ax.axhline(0.99, color="purple", ls=":", alpha=0.5)
+        ax.axvline(median_n, color="green", ls="--", alpha=0.6)
+        ax.scatter([median_n], [0.5], color="green", s=60, zorder=5)
+        ax.annotate(
+            f"n = {median_n}\nP = 0.5",
+            xy=(median_n, 0.5), xytext=(median_n + 6, 0.42),
+            fontsize=10, color="green",
+            arrowprops={"arrowstyle": "->", "color": "green", "alpha": 0.7},
+        )
+        ax.text(
+            ns.max() * 0.985, 0.505, "50%", ha="right", va="bottom",
+            fontsize=9, color="green", alpha=0.8,
+        )
+        ax.text(
+            ns.max() * 0.985, 0.995, "99%", ha="right", va="bottom",
+            fontsize=9, color="purple", alpha=0.8,
         )
         ax.set_xlabel("Number of people in the room (n)", fontsize=12)
         ax.set_ylabel("P(at least one shared birthday)", fontsize=12)
         ax.set_title(
             f"The Birthday Paradox  (D = {self._config.days_per_year})",
-            fontsize=14,
+            fontsize=14, pad=10,
         )
         ax.set_xlim(1, ns.max())
         ax.set_ylim(0, 1.02)
-        ax.legend(loc="lower right", fontsize=10)
+        ax.legend(loc="upper left", fontsize=10, framealpha=0.92)
         ax.grid(True, alpha=0.3)
-        fig.tight_layout()
 
         path: Path | None = None
         if save:
             path = self._output_dir / "probability_curve.png"
-            fig.savefig(path, dpi=self._dpi, bbox_inches="tight")
+            fig.savefig(path, dpi=self._dpi)
             logger.info(f"Saved {path}")
         if show:
             plt.show()
@@ -138,29 +150,39 @@ class MatplotlibVisualizer:
         ns, exact, approx = self._prob.probability_curve()
         empirical = self._sim.simulate_curve(ns, n_trials)
 
-        fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(11, 9), sharex=True)
+        fig, (ax1, ax2) = plt.subplots(
+            2, 1, figsize=(11, 9), sharex=True,
+            gridspec_kw={"height_ratios": [2.2, 1], "hspace": 0.25},
+            constrained_layout=False,
+        )
 
-        ax1.plot(ns, exact, "b-", lw=2, label="Exact theory")
+        ax1.plot(ns, exact, "b-", lw=2.2, label="Exact theory")
         ax1.plot(ns, approx, "r--", lw=1.5, alpha=0.7, label="Taylor approx")
         ax1.scatter(
-            ns, empirical, s=14, color="orange", alpha=0.75, zorder=3,
+            ns, empirical, s=22, color="orange", alpha=0.85, zorder=3,
+            edgecolor="white", linewidth=0.4,
             label=f"Monte Carlo ({n_trials:,} trials)",
         )
         ax1.set_ylabel("P(match)", fontsize=12)
-        ax1.set_title("Simulation vs Theory", fontsize=14)
-        ax1.legend(loc="lower right")
+        ax1.set_title("Simulation vs Theory", fontsize=14, pad=8)
+        ax1.legend(loc="upper left", framealpha=0.92)
         ax1.grid(True, alpha=0.3)
-        ax1.set_ylim(0, 1.02)
+        ax1.set_ylim(0, 1.04)
 
         residual = empirical - exact
-        ax2.bar(ns, residual, color="purple", alpha=0.65, width=0.8)
+        ax2.bar(ns, residual, color="purple", alpha=0.7, width=0.85)
         ax2.axhline(0, color="black", lw=0.8)
+        ymax = float(np.abs(residual).max()) * 1.25 or 0.01
+        ax2.set_ylim(-ymax, ymax)
         ax2.set_xlabel("Number of people (n)", fontsize=12)
-        ax2.set_ylabel("Empirical − Exact", fontsize=12)
-        ax2.set_title("Residuals (sampling noise)", fontsize=12)
+        ax2.set_ylabel("Empirical − Exact", fontsize=11)
+        ax2.text(
+            0.01, 0.95, "Residuals (sampling noise)",
+            transform=ax2.transAxes, fontsize=11, va="top",
+            bbox={"facecolor": "white", "alpha": 0.85, "edgecolor": "lightgray"},
+        )
         ax2.grid(True, alpha=0.3)
-
-        fig.tight_layout()
+        fig.subplots_adjust(left=0.08, right=0.97, top=0.95, bottom=0.08)
         path: Path | None = None
         if save:
             path = self._output_dir / "simulation_vs_theory.png"
@@ -179,31 +201,34 @@ class MatplotlibVisualizer:
         expected = np.array([self._prob.expected_collisions(int(n)) for n in ns])
         unique = np.array([self._prob.expected_unique_birthdays(int(n)) for n in ns])
 
-        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13, 5))
+        fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13, 5.5), constrained_layout=True)
 
-        ax1.plot(ns, expected, "b-", lw=2)
-        ax1.axhline(1.0, color="red", ls="--", alpha=0.6, label="E = 1 pair")
+        ax1.plot(ns, expected, "b-", lw=2.4, label="E[matching pairs]")
+        ax1.fill_between(ns, 0, expected, color="blue", alpha=0.08)
+        ax1.axhline(1.0, color="red", ls="--", alpha=0.7, label="E = 1 pair")
         n_one = int(np.ceil((1 + np.sqrt(1 + 8 * days)) / 2))
-        ax1.axvline(n_one, color="red", ls=":", alpha=0.5, label=f"n = {n_one}")
-        ax1.set_xlabel("People in room (n)")
-        ax1.set_ylabel("E[matching pairs]")
-        ax1.set_title("Expected number of matching pairs:  $\\binom{n}{2}/D$")
-        ax1.legend()
+        ax1.axvline(n_one, color="red", ls=":", alpha=0.6, label=f"crosses at n = {n_one}")
+        ax1.scatter([n_one], [1.0], color="red", s=55, zorder=5)
+        ax1.set_xlabel("People in room (n)", fontsize=11)
+        ax1.set_ylabel("E[matching pairs]", fontsize=11)
+        ax1.set_title(r"Expected matching pairs:  $\binom{n}{2}/D$", fontsize=12, pad=8)
+        ax1.set_xlim(1, ns.max())
+        ax1.legend(loc="lower right", framealpha=0.92, fontsize=10)
         ax1.grid(True, alpha=0.3)
 
-        ax2.plot(ns, unique, "g-", lw=2, label="E[distinct birthdays]")
-        ax2.plot(ns, ns, "k--", lw=1, alpha=0.5, label="if all distinct")
-        ax2.set_xlabel("People in room (n)")
-        ax2.set_ylabel("Expected count")
-        ax2.set_title("Distinct birthdays: $D \\cdot (1 - (1 - 1/D)^n)$")
-        ax2.legend()
+        ax2.plot(ns, unique, "g-", lw=2.4, label="E[distinct birthdays]")
+        ax2.plot(ns, ns, "k--", lw=1.1, alpha=0.55, label="if all distinct (= n)")
+        ax2.fill_between(ns, unique, ns, color="green", alpha=0.10, label="expected overlap")
+        ax2.set_xlabel("People in room (n)", fontsize=11)
+        ax2.set_ylabel("Expected count", fontsize=11)
+        ax2.set_title(r"Distinct birthdays:  $D\,(1 - (1 - 1/D)^{n})$", fontsize=12, pad=8)
+        ax2.set_xlim(1, ns.max())
+        ax2.legend(loc="lower right", framealpha=0.92, fontsize=10)
         ax2.grid(True, alpha=0.3)
-
-        fig.tight_layout()
         path: Path | None = None
         if save:
             path = self._output_dir / "expected_collisions.png"
-            fig.savefig(path, dpi=self._dpi, bbox_inches="tight")
+            fig.savefig(path, dpi=self._dpi)
             logger.info(f"Saved {path}")
         if show:
             plt.show()
@@ -219,34 +244,42 @@ class MatplotlibVisualizer:
         first_idx = self._sim.simulate_first_collision_distribution(max_n, n_trials)
         valid = first_idx[first_idx > 0]
 
-        fig, ax = plt.subplots(figsize=(11, 6))
+        fig, ax = plt.subplots(figsize=(11, 6), constrained_layout=True)
         bins = np.arange(2, max_n + 2).tolist()
         ax.hist(
-            valid, bins=bins, density=True, alpha=0.75, color="steelblue",
-            edgecolor="white", label=f"MC ({n_trials:,} trials)",
+            valid, bins=bins, density=True, alpha=0.78, color="steelblue",
+            edgecolor="white", label=f"Monte Carlo ({n_trials:,} trials)",
         )
-        # Analytical PMF: P(first collision at n) = P(no match n-1) - P(no match n)
         ns = np.arange(2, max_n + 1)
         pmf = np.array([
             self._prob.prob_no_match_exact(int(n - 1))
             - self._prob.prob_no_match_exact(int(n))
             for n in ns
         ])
-        ax.plot(ns, pmf, "r-", lw=2, label="Analytical PMF")
-        ax.set_xlabel("Index of person causing the first collision")
-        ax.set_ylabel("Probability")
+        ax.plot(ns, pmf, "r-", lw=2.4, label="Analytical PMF")
+        mode_n = int(ns[int(np.argmax(pmf))])
+        ax.axvline(mode_n, color="red", ls=":", alpha=0.55)
+        ax.annotate(
+            f"Mode  n ≈ {mode_n}",
+            xy=(mode_n, float(pmf.max())),
+            xytext=(mode_n + 12, float(pmf.max()) * 0.95),
+            fontsize=10, color="red",
+            arrowprops={"arrowstyle": "->", "color": "red", "alpha": 0.7},
+        )
+        ax.set_xlabel("Index of person causing the first collision", fontsize=11)
+        ax.set_ylabel("Probability", fontsize=11)
         ax.set_title(
             f"Where does the first collision happen?  (D = {self._config.days_per_year})",
-            fontsize=13,
+            fontsize=13, pad=10,
         )
-        ax.legend()
+        ax.set_xlim(2, max_n)
+        ax.legend(loc="upper right", framealpha=0.92, fontsize=10)
         ax.grid(True, alpha=0.3)
-        fig.tight_layout()
 
         path: Path | None = None
         if save:
             path = self._output_dir / "first_collision_distribution.png"
-            fig.savefig(path, dpi=self._dpi, bbox_inches="tight")
+            fig.savefig(path, dpi=self._dpi)
             logger.info(f"Saved {path}")
         if show:
             plt.show()
@@ -283,26 +316,32 @@ class MatplotlibVisualizer:
         self._apply_style()
         ns, curves, ks, colors = self._compute_k_curves(n_trials)
 
-        fig, ax = plt.subplots(figsize=(11, 6.5))
+        fig, ax = plt.subplots(figsize=(11, 6.5), constrained_layout=True)
         for k, curve, color in zip(ks, curves, colors, strict=True):
-            label = f"k = {k} (exact)" if k == 2 else f"k = {k} (MC {n_trials:,})"
-            ax.plot(ns, curve, lw=2, color=color, label=label)
+            label = f"k = {k}  (exact)" if k == 2 else f"k = {k}  (MC {n_trials:,})"
+            ax.plot(ns, curve, lw=2.4, color=color, label=label)
+            end_y = float(curve[-1])
+            if end_y > 0.01:
+                ax.text(
+                    ns.max() + 0.6, end_y, f"k={k}",
+                    color=color, fontsize=10, va="center",
+                )
 
         ax.set_xlabel("Number of people in the room (n)", fontsize=12)
         ax.set_ylabel("P(at least k share a birthday)", fontsize=12)
         ax.set_title(
-            f"k-Collision Curves  (D = {self._config.days_per_year})", fontsize=14,
+            f"k-Collision Curves  (D = {self._config.days_per_year})",
+            fontsize=14, pad=10,
         )
-        ax.set_xlim(1, ns.max())
-        ax.set_ylim(0, 1.02)
-        ax.legend(loc="lower right", fontsize=10)
+        ax.set_xlim(1, ns.max() + 4)
+        ax.set_ylim(0, 1.04)
+        ax.legend(loc="upper left", fontsize=10, framealpha=0.92, title="curves")
         ax.grid(True, alpha=0.3)
-        fig.tight_layout()
 
         path: Path | None = None
         if save:
             path = self._output_dir / "k_collision_curves.png"
-            fig.savefig(path, dpi=self._dpi, bbox_inches="tight")
+            fig.savefig(path, dpi=self._dpi)
             logger.info(f"Saved {path}")
         if show:
             plt.show()
@@ -319,28 +358,36 @@ class MatplotlibVisualizer:
         max_error = float(error.max())
         max_idx = int(error.argmax())
 
-        fig, ax = plt.subplots(figsize=(11, 6.5))
-        ax.plot(ns, error, lw=2, color="#D55E00", label="|exact − approx|")
+        fig, ax = plt.subplots(figsize=(11, 6.5), constrained_layout=True)
+        ax.plot(ns, error, lw=2.4, color="#D55E00", label="|exact − approx|")
+        ax.fill_between(ns, 0, error, color="#D55E00", alpha=0.15)
         ax.axhline(0.012, color="green", ls="--", alpha=0.7, label="0.012 threshold")
         ax.scatter(
-            [ns[max_idx]], [max_error], color="red", s=60, zorder=3,
+            [ns[max_idx]], [max_error], color="red", s=70, zorder=5,
             label=f"max = {max_error:.5f} at n = {ns[max_idx]}",
+        )
+        ax.annotate(
+            f"max\nn = {ns[max_idx]}",
+            xy=(ns[max_idx], max_error),
+            xytext=(ns[max_idx] + 12, max_error * 0.85),
+            fontsize=10, color="red",
+            arrowprops={"arrowstyle": "->", "color": "red", "alpha": 0.7},
         )
         ax.set_xlabel("Number of people in the room (n)", fontsize=12)
         ax.set_ylabel("Absolute error", fontsize=12)
         ax.set_title(
-            f"Approximation Error  (D = {self._config.days_per_year})", fontsize=14,
+            f"Approximation Error  (D = {self._config.days_per_year})",
+            fontsize=14, pad=10,
         )
         ax.set_xlim(1, ns.max())
-        ax.set_ylim(0, max(max_error * 1.1, 0.015))
-        ax.legend(loc="upper right", fontsize=10)
+        ax.set_ylim(0, max(max_error * 1.25, 0.015))
+        ax.legend(loc="upper right", fontsize=10, framealpha=0.92)
         ax.grid(True, alpha=0.3)
-        fig.tight_layout()
 
         path: Path | None = None
         if save:
             path = self._output_dir / "approximation_error.png"
-            fig.savefig(path, dpi=self._dpi, bbox_inches="tight")
+            fig.savefig(path, dpi=self._dpi)
             logger.info(f"Saved {path}")
         if show:
             plt.show()
@@ -359,27 +406,36 @@ class MatplotlibVisualizer:
         ns, exact, approx = self._prob.probability_curve()
         median_n = self._prob.median_group_size()
 
-        fig, ax = plt.subplots(figsize=(11, 6.5))
+        fig, ax = plt.subplots(figsize=(11, 6.5), constrained_layout=True)
         ax.set_xlim(1, ns.max())
         ax.set_ylim(0, 1.02)
         ax.set_xlabel("Number of people in the room (n)", fontsize=12)
         ax.set_ylabel("P(at least one shared birthday)", fontsize=12)
         ax.set_title(
             f"Birthday Paradox — building up (D = {self._config.days_per_year})",
-            fontsize=14,
+            fontsize=14, pad=10,
         )
         ax.axhline(0.5, color="green", ls=":", alpha=0.7)
         ax.axhline(0.99, color="purple", ls=":", alpha=0.5)
+        ax.text(
+            ns.max() * 0.985, 0.505, "50%", ha="right", va="bottom",
+            fontsize=9, color="green", alpha=0.8,
+        )
+        ax.text(
+            ns.max() * 0.985, 0.995, "99%", ha="right", va="bottom",
+            fontsize=9, color="purple", alpha=0.8,
+        )
         ax.grid(True, alpha=0.3)
 
-        (line_exact,) = ax.plot([], [], "b-", lw=2.2, label="Exact")
-        (line_approx,) = ax.plot([], [], "r--", lw=1.6, alpha=0.8, label="Approx")
-        (pt,) = ax.plot([], [], "o", color="orange", ms=9)
+        (line_exact,) = ax.plot([], [], "b-", lw=2.4, label="Exact")
+        (line_approx,) = ax.plot([], [], "r--", lw=1.6, alpha=0.85, label="Approx")
+        (pt,) = ax.plot([], [], "o", color="orange", ms=10, zorder=5)
         txt = ax.text(
-            0.02, 0.96, "", transform=ax.transAxes, fontsize=12, va="top",
-            bbox={"facecolor": "white", "alpha": 0.85, "edgecolor": "gray"},
+            0.98, 0.04, "", transform=ax.transAxes, fontsize=12,
+            va="bottom", ha="right",
+            bbox={"facecolor": "white", "alpha": 0.9, "edgecolor": "gray"},
         )
-        ax.legend(loc="lower right")
+        ax.legend(loc="upper left", framealpha=0.92)
 
         def init() -> tuple[Any, ...]:
             line_exact.set_data([], [])
@@ -441,29 +497,43 @@ class MatplotlibVisualizer:
         xs = radius * np.cos(angles)
         ys = radius * np.sin(angles)
 
-        fig, (ax_room, ax_curve) = plt.subplots(1, 2, figsize=(14, 7))
-        ax_room.set_xlim(-5.5, 5.5)
-        ax_room.set_ylim(-5.5, 5.5)
+        fig, (ax_room, ax_curve) = plt.subplots(
+            1, 2, figsize=(14, 7.2),
+            gridspec_kw={"width_ratios": [1.05, 1], "wspace": 0.2},
+        )
+        fig.suptitle(
+            f"Room filling up   (n = {group_size},  D = {days})",
+            fontsize=15, y=0.97,
+        )
+        ax_room.set_xlim(-6.0, 6.0)
+        ax_room.set_ylim(-7.4, 6.0)
         ax_room.set_aspect("equal")
-        ax_room.set_title(f"Room filling up (n = {group_size}, D = {days})", fontsize=13)
         ax_room.axis("off")
+        ax_room.add_patch(Circle((0, 0), radius + 0.9, fill=False,
+                                 edgecolor="lightgray", linestyle="--", linewidth=1.0))
 
         ns_curve, exact_curve, _ = self._prob.probability_curve(max_n=group_size)
-        ax_curve.plot(ns_curve, exact_curve, "b-", lw=2)
+        ax_curve.plot(ns_curve, exact_curve, "b-", lw=2.2, label="P(match)")
         ax_curve.set_xlim(1, group_size)
         ax_curve.set_ylim(0, 1.02)
-        ax_curve.set_xlabel("People in room (n)")
-        ax_curve.set_ylabel("P(match)")
-        ax_curve.set_title("Probability so far", fontsize=12)
+        ax_curve.set_xlabel("People in room (n)", fontsize=11)
+        ax_curve.set_ylabel("P(match)", fontsize=11)
+        ax_curve.set_title("Probability so far", fontsize=12, pad=8)
         ax_curve.grid(True, alpha=0.3)
         ax_curve.axhline(0.5, color="green", ls=":", alpha=0.7)
-        (marker,) = ax_curve.plot([], [], "o", color="orange", ms=10)
+        ax_curve.text(
+            group_size * 0.99, 0.505, "50%", ha="right", va="bottom",
+            fontsize=9, color="green", alpha=0.8,
+        )
+        (marker,) = ax_curve.plot([], [], "o", color="orange", ms=11, zorder=5)
+        ax_curve.legend(loc="upper left", framealpha=0.92)
 
         circles: list[Circle] = []
         labels: list[Any] = []
         info = ax_room.text(
-            0, 5.0, "", ha="center", fontsize=13,
-            bbox={"facecolor": "white", "alpha": 0.85, "edgecolor": "gray"},
+            0, -6.6, "", ha="center", va="center", fontsize=12,
+            bbox={"facecolor": "white", "alpha": 0.92,
+                  "edgecolor": "gray", "boxstyle": "round,pad=0.5"},
         )
 
         # Persistent state across frames (mutable to dodge `nonlocal` in closure)
@@ -548,21 +618,27 @@ class MatplotlibVisualizer:
 
         idxs = np.unique(np.linspace(1, max_trials, snapshots).astype(int))
 
-        fig, ax = plt.subplots(figsize=(11, 6.5))
+        fig, ax = plt.subplots(figsize=(11, 6.5), constrained_layout=True)
+        ax.set_xscale("log")
         ax.set_xlim(1, max_trials)
         ax.set_ylim(0, 1.0)
-        ax.set_xlabel("Trials")
-        ax.set_ylabel("Running estimate of P(match)")
+        ax.set_xlabel("Trials  (log scale)", fontsize=12)
+        ax.set_ylabel("Running estimate of P(match)", fontsize=12)
         ax.set_title(
-            f"Monte Carlo convergence  (n = {group_size}, D = {days})", fontsize=13,
+            f"Monte Carlo convergence   (n = {group_size},  D = {days})",
+            fontsize=14, pad=10,
         )
-        ax.axhline(theory, color="red", ls="--", lw=2, label=f"Exact = {theory:.4f}")
-        ax.grid(True, alpha=0.3)
-        (line,) = ax.plot([], [], "b-", lw=1.5, label="Running estimate")
-        ax.legend(loc="lower right")
+        ax.axhline(theory, color="red", ls="--", lw=2.2, label=f"Exact = {theory:.4f}")
+        ax.fill_between(
+            [1, max_trials], theory - 0.02, theory + 0.02,
+            color="red", alpha=0.08, label="±0.02 band",
+        )
+        ax.grid(True, alpha=0.3, which="both")
+        (line,) = ax.plot([], [], "b-", lw=2.0, label="Running estimate")
+        ax.legend(loc="upper right", framealpha=0.92)
         txt = ax.text(
-            0.02, 0.96, "", transform=ax.transAxes, fontsize=11, va="top",
-            bbox={"facecolor": "white", "alpha": 0.85},
+            0.02, 0.04, "", transform=ax.transAxes, fontsize=11, va="bottom",
+            bbox={"facecolor": "white", "alpha": 0.9, "edgecolor": "gray"},
         )
 
         def init() -> tuple[Any, ...]:
@@ -599,24 +675,25 @@ class MatplotlibVisualizer:
         self._apply_style()
         ns, curves, ks, colors = self._compute_k_curves(n_trials)
 
-        fig, ax = plt.subplots(figsize=(11, 6.5))
+        fig, ax = plt.subplots(figsize=(11, 6.5), constrained_layout=True)
         ax.set_xlim(1, ns.max())
-        ax.set_ylim(0, 1.02)
+        ax.set_ylim(0, 1.04)
         ax.set_xlabel("Number of people in the room (n)", fontsize=12)
         ax.set_ylabel("P(at least k share a birthday)", fontsize=12)
         ax.set_title(
             f"k-Collision Curves — building up (D = {self._config.days_per_year})",
-            fontsize=14,
+            fontsize=14, pad=10,
         )
         ax.grid(True, alpha=0.3)
         lines = [
-            ax.plot([], [], lw=2, color=c, label=f"k = {k}")[0]
+            ax.plot([], [], lw=2.4, color=c, label=f"k = {k}")[0]
             for k, c in zip(ks, colors, strict=True)
         ]
-        ax.legend(loc="lower right", fontsize=10)
+        ax.legend(loc="center left", fontsize=10, framealpha=0.92, title="curves")
         txt = ax.text(
-            0.02, 0.96, "", transform=ax.transAxes, fontsize=11, va="top",
-            bbox={"facecolor": "white", "alpha": 0.85, "edgecolor": "gray"},
+            0.98, 0.04, "", transform=ax.transAxes, fontsize=11,
+            va="bottom", ha="right",
+            bbox={"facecolor": "white", "alpha": 0.92, "edgecolor": "gray"},
         )
 
         def init() -> tuple[Any, ...]:
