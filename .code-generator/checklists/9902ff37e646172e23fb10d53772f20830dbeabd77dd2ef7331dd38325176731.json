@@ -3,7 +3,7 @@
     "issue_number": 16,
     "title": "feat(gitignore): add output/*.mp4 to .gitignore to prevent large binaries from being committed",
     "tests_passed": true,
-    "committed": false,
+    "committed": true,
     "feature_done": false,
     "runtime_verified": true,
     "professionalized": false
@@ -12,7 +12,7 @@
     "issue_number": 17,
     "title": "feat(ci): create GitHub Actions workflow for lint, mypy, pytest on Python 3.10/3.11/3.12 with release artifacts",
     "tests_passed": true,
-    "committed": false,
+    "committed": true,
     "feature_done": false,
     "runtime_verified": true,
     "professionalized": false
@@ -21,7 +21,7 @@
     "issue_number": 18,
     "title": "feat(docs): update README to v1.1 with MP4 links, imageio-ffmpeg docs, and birthday animate examples",
     "tests_passed": true,
-    "committed": false,
+    "committed": true,
     "feature_done": false,
     "runtime_verified": true,
     "professionalized": false
