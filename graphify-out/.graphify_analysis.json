@@ -1,0 +1,272 @@
+{
+  "communities": {
+    "0": [
+      "code_generator_state_base_commit",
+      "code_generator_state_cache_prewarmed",
+      "code_generator_state_cache_ttl_probe",
+      "code_generator_state_client_alive_at",
+      "code_generator_state_codex_model",
+      "code_generator_state_current_cycle",
+      "code_generator_state_cycles",
+      "code_generator_state_effort_hints",
+      "code_generator_state_gemini_model",
+      "code_generator_state_issues",
+      "code_generator_state_json",
+      "code_generator_state_last_error",
+      "code_generator_state_mode",
+      "code_generator_state_paused_until",
+      "code_generator_state_phase",
+      "code_generator_state_phase2_batch_id",
+      "code_generator_state_phase6_5",
+      "code_generator_state_phase8",
+      "code_generator_state_prompt_hashes",
+      "code_generator_state_rate_limit_type",
+      "code_generator_state_requirements_hash",
+      "code_generator_state_sdk_version",
+      "code_generator_state_session_id",
+      "code_generator_state_session_mode",
+      "code_generator_state_started_at",
+      "code_generator_state_token_usage",
+      "code_generator_state_updated_at",
+      "code_generator_state_vigil_triggered"
+    ],
+    "1": [
+      "math_probability_birthdayprobability_init",
+      "simulation_monte_carlo_montecarlosimulator",
+      "simulation_monte_carlo_montecarlosimulator_reset_seed",
+      "simulation_monte_carlo_montecarlosimulator_simulate_curve",
+      "simulation_monte_carlo_montecarlosimulator_simulate_first_collision_distribution",
+      "simulation_monte_carlo_rationale_113",
+      "simulation_monte_carlo_rationale_17",
+      "simulation_monte_carlo_rationale_82",
+      "visualization_matplotlib_viz_matplotlibvisualizer",
+      "visualization_matplotlib_viz_matplotlibvisualizer_animate_probability_buildup",
+      "visualization_matplotlib_viz_matplotlibvisualizer_animate_room_filling",
+      "visualization_matplotlib_viz_matplotlibvisualizer_animate_simulation_convergence",
+      "visualization_matplotlib_viz_matplotlibvisualizer_apply_style",
+      "visualization_matplotlib_viz_matplotlibvisualizer_create_all",
+      "visualization_matplotlib_viz_matplotlibvisualizer_plot_expected_collisions",
+      "visualization_matplotlib_viz_matplotlibvisualizer_plot_first_collision_distribution",
+      "visualization_matplotlib_viz_matplotlibvisualizer_plot_probability_curve",
+      "visualization_matplotlib_viz_matplotlibvisualizer_plot_simulation_vs_theory",
+      "visualization_matplotlib_viz_rationale_104",
+      "visualization_matplotlib_viz_rationale_143",
+      "visualization_matplotlib_viz_rationale_184",
+      "visualization_matplotlib_viz_rationale_231",
+      "visualization_matplotlib_viz_rationale_24",
+      "visualization_matplotlib_viz_rationale_295",
+      "visualization_matplotlib_viz_rationale_418",
+      "visualization_matplotlib_viz_rationale_485",
+      "visualization_matplotlib_viz_rationale_62"
+    ],
+    "2": [
+      "birthday_cli_all",
+      "birthday_cli_analyze",
+      "birthday_cli_cli",
+      "birthday_cli_config_options",
+      "birthday_cli_main",
+      "birthday_cli_plot",
+      "birthday_cli_rationale_1",
+      "birthday_cli_rationale_137",
+      "birthday_cli_rationale_30",
+      "birthday_cli_rationale_46",
+      "birthday_cli_rationale_71",
+      "birthday_cli_rationale_99",
+      "birthday_cli_setup_logging",
+      "birthday_cli_simulate",
+      "core_config_birthdayconfig",
+      "core_config_birthdayconfig_post_init",
+      "core_config_pigeonhole_bound",
+      "core_config_rationale_1",
+      "core_config_rationale_10",
+      "src_birthday_cli_py",
+      "src_birthday_core_config_py"
+    ],
+    "3": [
+      "math_probability_birthdayprobability",
+      "math_probability_birthdayprobability_expected_collisions",
+      "math_probability_birthdayprobability_expected_unique_birthdays",
+      "math_probability_birthdayprobability_median_group_size",
+      "math_probability_birthdayprobability_prob_at_least_k_share",
+      "math_probability_birthdayprobability_prob_match_approx",
+      "math_probability_birthdayprobability_prob_match_exact",
+      "math_probability_birthdayprobability_prob_no_match_exact",
+      "math_probability_birthdayprobability_probability_curve",
+      "math_probability_rationale_107",
+      "math_probability_rationale_15",
+      "math_probability_rationale_34",
+      "math_probability_rationale_49",
+      "math_probability_rationale_53",
+      "math_probability_rationale_60",
+      "math_probability_rationale_67",
+      "math_probability_rationale_76",
+      "math_probability_rationale_93"
+    ],
+    "4": [
+      "core_models_collisioncurve",
+      "core_models_empirical_probability",
+      "core_models_rationale_1",
+      "core_models_rationale_13",
+      "core_models_rationale_37",
+      "core_models_simulationresult",
+      "simulation_monte_carlo_montecarlosimulator_simulate_group",
+      "simulation_monte_carlo_rationale_45",
+      "src_birthday_core_models_py"
+    ],
+    "5": [
+      "math_probability_config",
+      "math_probability_rationale_1",
+      "simulation_monte_carlo_rationale_1",
+      "simulation_monte_carlo_seed",
+      "src_birthday_math_probability_py",
+      "src_birthday_simulation_monte_carlo_py"
+    ],
+    "6": [
+      "code_generator_state_repo",
+      "code_generator_state_repo_full",
+      "code_generator_state_repo_host",
+      "code_generator_state_repo_name",
+      "code_generator_state_repo_owner"
+    ],
+    "7": [
+      "src_birthday_visualization_matplotlib_viz_py",
+      "visualization_matplotlib_viz_output_dir",
+      "visualization_matplotlib_viz_rationale_1"
+    ],
+    "8": [
+      "tests_init_py"
+    ],
+    "9": [
+      "core_config_rationale_34"
+    ],
+    "10": [
+      "core_models_rationale_31"
+    ]
+  },
+  "cohesion": {
+    "0": 0.07,
+    "1": 0.12,
+    "2": 0.12,
+    "3": 0.14,
+    "4": 0.22,
+    "5": 0.33,
+    "6": 0.4,
+    "7": 0.67,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0
+  },
+  "gods": [
+    {
+      "id": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "label": "MatplotlibVisualizer",
+      "degree": 17
+    },
+    {
+      "id": "math_probability_birthdayprobability",
+      "label": "BirthdayProbability",
+      "degree": 16
+    },
+    {
+      "id": "simulation_monte_carlo_montecarlosimulator",
+      "label": "MonteCarloSimulator",
+      "degree": 11
+    },
+    {
+      "id": "core_config_birthdayconfig",
+      "label": "BirthdayConfig",
+      "degree": 10
+    },
+    {
+      "id": "code_generator_state_repo",
+      "label": "repo",
+      "degree": 5
+    },
+    {
+      "id": "birthday_cli_simulate",
+      "label": "simulate()",
+      "degree": 5
+    },
+    {
+      "id": "birthday_cli_all",
+      "label": "all()",
+      "degree": 5
+    },
+    {
+      "id": "birthday_cli_cli",
+      "label": "cli()",
+      "degree": 4
+    },
+    {
+      "id": "birthday_cli_analyze",
+      "label": "analyze()",
+      "degree": 4
+    },
+    {
+      "id": "birthday_cli_plot",
+      "label": "plot()",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "analyze()",
+      "target": "BirthdayProbability",
+      "source_files": [
+        "src/birthday/cli.py",
+        "src/birthday/math/probability.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "simulate()",
+      "target": "MonteCarloSimulator",
+      "source_files": [
+        "src/birthday/cli.py",
+        "src/birthday/simulation/monte_carlo.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "simulate()",
+      "target": "BirthdayProbability",
+      "source_files": [
+        "src/birthday/cli.py",
+        "src/birthday/math/probability.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "plot()",
+      "target": "MatplotlibVisualizer",
+      "source_files": [
+        "src/birthday/cli.py",
+        "src/birthday/visualization/matplotlib_viz.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "all()",
+      "target": "BirthdayProbability",
+      "source_files": [
+        "src/birthday/cli.py",
+        "src/birthday/math/probability.py"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    }
+  ],
+  "tokens": {
+    "input": 0,
+    "output": 0
+  }
+}

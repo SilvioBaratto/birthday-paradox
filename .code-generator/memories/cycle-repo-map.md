@@ -1,0 +1,1 @@
+(graphify report unavailable — rely on feature-dev:code-explorer or MCP tools)

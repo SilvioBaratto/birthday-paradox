@@ -1,0 +1,4 @@
+- #1 [priority:high] feat: create AnimationWriter abstraction in visualization/writers.py — agent: python-pro
+- #2 [priority:high] feat: add k-collision curves and approximation error static plots — agent: python-pro
+- #3 [priority:high] feat: add k-collision frame-by-frame GIF animation — agent: python-pro
+- #4 [priority:medium] feat: wire new visualizations into create_all and CLI — agent: python-pro

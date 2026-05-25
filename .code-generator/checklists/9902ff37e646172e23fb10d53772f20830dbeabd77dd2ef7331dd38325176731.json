@@ -1,0 +1,38 @@
+[
+  {
+    "issue_number": 1,
+    "title": "feat: create AnimationWriter abstraction in visualization/writers.py",
+    "tests_passed": true,
+    "committed": false,
+    "feature_done": false,
+    "runtime_verified": true,
+    "professionalized": false
+  },
+  {
+    "issue_number": 2,
+    "title": "feat: add k-collision curves and approximation error static plots",
+    "tests_passed": true,
+    "committed": false,
+    "feature_done": false,
+    "runtime_verified": true,
+    "professionalized": false
+  },
+  {
+    "issue_number": 3,
+    "title": "feat: add k-collision frame-by-frame GIF animation",
+    "tests_passed": true,
+    "committed": false,
+    "feature_done": false,
+    "runtime_verified": true,
+    "professionalized": false
+  },
+  {
+    "issue_number": 4,
+    "title": "feat: wire new visualizations into create_all and CLI",
+    "tests_passed": true,
+    "committed": false,
+    "feature_done": false,
+    "runtime_verified": true,
+    "professionalized": false
+  }
+]

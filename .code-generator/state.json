@@ -1,0 +1,379 @@
+{
+  "mode": "multi-cycle",
+  "started_at": "2026-05-25T10:54:46Z",
+  "updated_at": "2026-05-25T11:50:29Z",
+  "current_cycle": 1,
+  "cycles": [
+    {
+      "id": 1,
+      "name": "Visualization v1.1",
+      "milestone_number": 1,
+      "milestone_title": "Cycle 1 \u2014 Visualization v1.1",
+      "status": "open",
+      "phase": 65,
+      "issues": [
+        {
+          "number": 1,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:high",
+            "phase:implement",
+            "agent:python-pro",
+            "area:visualization"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: create AnimationWriter abstraction in visualization/writers.py"
+        },
+        {
+          "number": 2,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:high",
+            "phase:implement",
+            "agent:python-pro",
+            "area:visualization"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: add k-collision curves and approximation error static plots"
+        },
+        {
+          "number": 3,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:high",
+            "phase:implement",
+            "agent:python-pro",
+            "area:visualization"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: add k-collision frame-by-frame GIF animation"
+        },
+        {
+          "number": 4,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:medium",
+            "phase:implement",
+            "agent:python-pro",
+            "area:visualization"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: wire new visualizations into create_all and CLI"
+        }
+      ],
+      "commit_sha": null,
+      "depends_on": [],
+      "scope": "Missing static plots (k-collision curves, approximation error), missing GIF animation (k-collision), writers.py abstraction for Pillow/FFMpeg",
+      "effort_hints": [
+        {
+          "scope_keyword": "k-collision animation",
+          "effort": "medium"
+        },
+        {
+          "scope_keyword": "writers abstraction",
+          "effort": "low"
+        }
+      ],
+      "base_commit": "a43c7e5cefd8250aa816d0cff9a36b5313b8466e",
+      "token_usage": {
+        "phase1": {
+          "input": 1106143,
+          "output": 8198,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 35,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase2": {
+          "input": 169985,
+          "output": 3852,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 15,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase3_4": {
+          "input": 8590629,
+          "output": 53397,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 136,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase5": {
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 0,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase6": {
+          "input": 1297008,
+          "output": 16552,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 62,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase6_5": {
+          "input": 1407283,
+          "output": 3662,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 13,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        }
+      },
+      "started_at": "2026-05-25T11:11:06Z",
+      "finished_at": null,
+      "cache_telemetry": {
+        "input": 11163765,
+        "output": 81999,
+        "cache_read": 0,
+        "cache_write": 0,
+        "cache_hit_pct": 0.0,
+        "wall_seconds": 2132.239735458017
+      },
+      "phase2_batch_id": null,
+      "ollama_model": "kimi-k2.6:cloud",
+      "gemini_model": null,
+      "codex_model": null,
+      "cache_prewarmed": true,
+      "cache_ttl_probe": "5m",
+      "phase6_5": {
+        "attempt": 1,
+        "last_tier": "DONE",
+        "tiers_passed": [
+          "T0"
+        ],
+        "tiers_failed": [
+          "T0",
+          "T1",
+          "T2"
+        ],
+        "tiers_skipped": [
+          "T3",
+          "T4"
+        ],
+        "skip_reasons": {
+          "T3": "no frontend",
+          "T4": "no docker"
+        }
+      },
+      "vigil_triggered": false,
+      "phase8": null
+    },
+    {
+      "id": 2,
+      "name": "MP4 Export & CLI",
+      "milestone_number": null,
+      "milestone_title": "Cycle 2 \u2014 MP4 Export & CLI",
+      "status": "open",
+      "phase": 0,
+      "issues": [],
+      "commit_sha": null,
+      "depends_on": [
+        1
+      ],
+      "scope": "MP4 versions of all 4 animations via FFMpegWriter, `birthday animate <name>` subcommand, --no-mp4 flag, graceful ffmpeg-missing fallback",
+      "effort_hints": [
+        {
+          "scope_keyword": "ffmpeg integration",
+          "effort": "medium"
+        },
+        {
+          "scope_keyword": "animate subcommand",
+          "effort": "low"
+        }
+      ],
+      "base_commit": null,
+      "token_usage": {},
+      "started_at": null,
+      "finished_at": null,
+      "cache_telemetry": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0,
+        "cache_hit_pct": 0.0,
+        "wall_seconds": 0
+      },
+      "phase2_batch_id": null,
+      "ollama_model": "kimi-k2.6:cloud",
+      "gemini_model": null,
+      "codex_model": null,
+      "cache_prewarmed": false,
+      "cache_ttl_probe": null,
+      "phase6_5": null,
+      "vigil_triggered": false,
+      "phase8": null
+    },
+    {
+      "id": 3,
+      "name": "Reporting, DI & Tests",
+      "milestone_number": null,
+      "milestone_title": "Cycle 3 \u2014 Reporting, DI & Tests",
+      "status": "open",
+      "phase": 0,
+      "issues": [],
+      "commit_sha": null,
+      "depends_on": [
+        2
+      ],
+      "scope": "Console reporting tables, dependency injection container, pytest suite (probability, simulation, visualization, CLI) with \u226585% coverage",
+      "effort_hints": [
+        {
+          "scope_keyword": "test suite",
+          "effort": "high"
+        },
+        {
+          "scope_keyword": "di container",
+          "effort": "low"
+        }
+      ],
+      "base_commit": null,
+      "token_usage": {},
+      "started_at": null,
+      "finished_at": null,
+      "cache_telemetry": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0,
+        "cache_hit_pct": 0.0,
+        "wall_seconds": 0
+      },
+      "phase2_batch_id": null,
+      "ollama_model": "kimi-k2.6:cloud",
+      "gemini_model": null,
+      "codex_model": null,
+      "cache_prewarmed": false,
+      "cache_ttl_probe": null,
+      "phase6_5": null,
+      "vigil_triggered": false,
+      "phase8": null
+    },
+    {
+      "id": 4,
+      "name": "CI & Documentation",
+      "milestone_number": null,
+      "milestone_title": "Cycle 4 \u2014 CI & Documentation",
+      "status": "open",
+      "phase": 0,
+      "issues": [],
+      "commit_sha": null,
+      "depends_on": [
+        3
+      ],
+      "scope": "GitHub Actions workflow (lint, mypy, pytest, release artifacts), README v1.1 updates with MP4 links",
+      "effort_hints": [
+        {
+          "scope_keyword": "github actions",
+          "effort": "low"
+        }
+      ],
+      "base_commit": null,
+      "token_usage": {},
+      "started_at": null,
+      "finished_at": null,
+      "cache_telemetry": {
+        "input": 0,
+        "output": 0,
+        "cache_read": 0,
+        "cache_write": 0,
+        "cache_hit_pct": 0.0,
+        "wall_seconds": 0
+      },
+      "phase2_batch_id": null,
+      "ollama_model": "kimi-k2.6:cloud",
+      "gemini_model": null,
+      "codex_model": null,
+      "cache_prewarmed": false,
+      "cache_ttl_probe": null,
+      "phase6_5": null,
+      "vigil_triggered": false,
+      "phase8": null
+    }
+  ],
+  "phase": null,
+  "issues": [],
+  "session_id": null,
+  "paused_until": null,
+  "rate_limit_type": null,
+  "last_error": null,
+  "effort_hints": [],
+  "requirements_hash": "9902ff37e646172e23fb10d53772f20830dbeabd77dd2ef7331dd38325176731",
+  "base_commit": null,
+  "token_usage": {
+    "phase0": {
+      "input": 169953,
+      "output": 4669,
+      "cache_read": 0,
+      "cache_write": 0,
+      "num_turns": 15,
+      "cache_write_5m": 0,
+      "cache_write_1h": 0,
+      "compaction_events": 0,
+      "clear_events": 0
+    }
+  },
+  "session_mode": "shared",
+  "client_alive_at": "2026-05-25T11:11:07+00:00",
+  "phase2_batch_id": null,
+  "repo": {
+    "host": "github.com",
+    "owner": "SilvioBaratto",
+    "name": "birthday-paradox",
+    "full": "SilvioBaratto/birthday-paradox"
+  },
+  "prompt_hashes": {
+    "prompt-phase-8-finalization.md": "3a9154eaafe0e7ebae7a262f388ee84ee6f02e64dd6d19095e15301d0c4abb30",
+    "prompt-phase-7-commit.md": "348815eb8a5cf12dd0cbb3046f88564bebedb786650e5ddc1fd7daf352840dc0",
+    "prompt-phase-6-test.md": "64c042d9cfe8674c942ed312beb7f6f9229e6a9f1380901f51c6f47488d43a56",
+    "prompt-optimize-requirements.md": "b8b06a05012b83ed6765092e9f706e86e5591ce5972efc6578e17b079ea78f87",
+    "prompt-phase-0-complexity.md": "b8008678ed77a6f30b71209407414c72eecd019f8c8d9c5a71f2197369396443",
+    "prompt-phase-1-planning.md": "558da28fe118c43b2b2883b68261bff5df0a8ba6442ccd0f2ef78d06d6bf4e93",
+    "prompt-phase-5-final-review.md": "1f031ec137d69fa84e420021e6b8dd65d13d2145b82cc805811d8d5dace5cfb2",
+    "prompt-phase-3-implementation.md": "967c3cd3ba60286bb4ebb70e7b015e458c3631c2a88a9540080331a707b3cb39",
+    "prompt-review.md": "5478f82496cdf74c7d0c88fabcdb8ecad5a5de17fd5a9b69db925a3c9bd6a6a2",
+    "prompt-phase-6-5-verify.md": "350854e5a586aed54ee3bf82c5a243d50233e2422b8b9d30e3a1db6db82c0020",
+    "prompt-phase-8-repair.md": "415168265da0c210eda39998f26655d62421f25c928a5ffc73e3c5311eb85ec2",
+    "prompt-cycle-specializer.md": "6acce464df29d949af8529cab6d89984e58ceabd0eb016e0f8f1583e960b1939",
+    "prompt-phase-2-batch-review.md": "34791421b2340be36434e27bbb36be175ad35a6760fe434f0eeea144e738f1af"
+  },
+  "sdk_version": "0.1.81",
+  "gemini_model": null,
+  "codex_model": null,
+  "cache_prewarmed": false,
+  "cache_ttl_probe": null,
+  "phase6_5": null,
+  "vigil_triggered": false,
+  "phase8": null
+}

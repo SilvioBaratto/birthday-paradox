@@ -1,0 +1,2635 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "state.json",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L1",
+      "id": "code_generator_state_json",
+      "community": 0,
+      "norm_label": "state.json"
+    },
+    {
+      "label": "mode",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L2",
+      "id": "code_generator_state_mode",
+      "community": 0,
+      "norm_label": "mode"
+    },
+    {
+      "label": "started_at",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L3",
+      "id": "code_generator_state_started_at",
+      "community": 0,
+      "norm_label": "started_at"
+    },
+    {
+      "label": "updated_at",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L4",
+      "id": "code_generator_state_updated_at",
+      "community": 0,
+      "norm_label": "updated_at"
+    },
+    {
+      "label": "current_cycle",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L5",
+      "id": "code_generator_state_current_cycle",
+      "community": 0,
+      "norm_label": "current_cycle"
+    },
+    {
+      "label": "cycles",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L6",
+      "id": "code_generator_state_cycles",
+      "community": 0,
+      "norm_label": "cycles"
+    },
+    {
+      "label": "phase",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L7",
+      "id": "code_generator_state_phase",
+      "community": 0,
+      "norm_label": "phase"
+    },
+    {
+      "label": "issues",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L8",
+      "id": "code_generator_state_issues",
+      "community": 0,
+      "norm_label": "issues"
+    },
+    {
+      "label": "session_id",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L9",
+      "id": "code_generator_state_session_id",
+      "community": 0,
+      "norm_label": "session_id"
+    },
+    {
+      "label": "paused_until",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L10",
+      "id": "code_generator_state_paused_until",
+      "community": 0,
+      "norm_label": "paused_until"
+    },
+    {
+      "label": "rate_limit_type",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L11",
+      "id": "code_generator_state_rate_limit_type",
+      "community": 0,
+      "norm_label": "rate_limit_type"
+    },
+    {
+      "label": "last_error",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L12",
+      "id": "code_generator_state_last_error",
+      "community": 0,
+      "norm_label": "last_error"
+    },
+    {
+      "label": "effort_hints",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L13",
+      "id": "code_generator_state_effort_hints",
+      "community": 0,
+      "norm_label": "effort_hints"
+    },
+    {
+      "label": "requirements_hash",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L14",
+      "id": "code_generator_state_requirements_hash",
+      "community": 0,
+      "norm_label": "requirements_hash"
+    },
+    {
+      "label": "base_commit",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L15",
+      "id": "code_generator_state_base_commit",
+      "community": 0,
+      "norm_label": "base_commit"
+    },
+    {
+      "label": "token_usage",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L16",
+      "id": "code_generator_state_token_usage",
+      "community": 0,
+      "norm_label": "token_usage"
+    },
+    {
+      "label": "session_mode",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L17",
+      "id": "code_generator_state_session_mode",
+      "community": 0,
+      "norm_label": "session_mode"
+    },
+    {
+      "label": "client_alive_at",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L18",
+      "id": "code_generator_state_client_alive_at",
+      "community": 0,
+      "norm_label": "client_alive_at"
+    },
+    {
+      "label": "phase2_batch_id",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L19",
+      "id": "code_generator_state_phase2_batch_id",
+      "community": 0,
+      "norm_label": "phase2_batch_id"
+    },
+    {
+      "label": "repo",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L20",
+      "id": "code_generator_state_repo",
+      "community": 6,
+      "norm_label": "repo"
+    },
+    {
+      "label": "host",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L21",
+      "id": "code_generator_state_repo_host",
+      "community": 6,
+      "norm_label": "host"
+    },
+    {
+      "label": "owner",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L22",
+      "id": "code_generator_state_repo_owner",
+      "community": 6,
+      "norm_label": "owner"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L23",
+      "id": "code_generator_state_repo_name",
+      "community": 6,
+      "norm_label": "name"
+    },
+    {
+      "label": "full",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L24",
+      "id": "code_generator_state_repo_full",
+      "community": 6,
+      "norm_label": "full"
+    },
+    {
+      "label": "prompt_hashes",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L26",
+      "id": "code_generator_state_prompt_hashes",
+      "community": 0,
+      "norm_label": "prompt_hashes"
+    },
+    {
+      "label": "sdk_version",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L27",
+      "id": "code_generator_state_sdk_version",
+      "community": 0,
+      "norm_label": "sdk_version"
+    },
+    {
+      "label": "gemini_model",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L28",
+      "id": "code_generator_state_gemini_model",
+      "community": 0,
+      "norm_label": "gemini_model"
+    },
+    {
+      "label": "codex_model",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L29",
+      "id": "code_generator_state_codex_model",
+      "community": 0,
+      "norm_label": "codex_model"
+    },
+    {
+      "label": "cache_prewarmed",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L30",
+      "id": "code_generator_state_cache_prewarmed",
+      "community": 0,
+      "norm_label": "cache_prewarmed"
+    },
+    {
+      "label": "cache_ttl_probe",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L31",
+      "id": "code_generator_state_cache_ttl_probe",
+      "community": 0,
+      "norm_label": "cache_ttl_probe"
+    },
+    {
+      "label": "phase6_5",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L32",
+      "id": "code_generator_state_phase6_5",
+      "community": 0,
+      "norm_label": "phase6_5"
+    },
+    {
+      "label": "vigil_triggered",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L33",
+      "id": "code_generator_state_vigil_triggered",
+      "community": 0,
+      "norm_label": "vigil_triggered"
+    },
+    {
+      "label": "phase8",
+      "file_type": "code",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L34",
+      "id": "code_generator_state_phase8",
+      "community": 0,
+      "norm_label": "phase8"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "tests/__init__.py",
+      "source_location": "L1",
+      "id": "tests_init_py",
+      "community": 8,
+      "norm_label": "__init__.py"
+    },
+    {
+      "label": "cli.py",
+      "file_type": "code",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L1",
+      "id": "src_birthday_cli_py",
+      "community": 2,
+      "norm_label": "cli.py"
+    },
+    {
+      "label": "_setup_logging()",
+      "file_type": "code",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L17",
+      "id": "birthday_cli_setup_logging",
+      "community": 2,
+      "norm_label": "_setup_logging()"
+    },
+    {
+      "label": "cli()",
+      "file_type": "code",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L29",
+      "id": "birthday_cli_cli",
+      "community": 2,
+      "norm_label": "cli()"
+    },
+    {
+      "label": "_config_options()",
+      "file_type": "code",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L36",
+      "id": "birthday_cli_config_options",
+      "community": 2,
+      "norm_label": "_config_options()"
+    },
+    {
+      "label": "analyze()",
+      "file_type": "code",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L45",
+      "id": "birthday_cli_analyze",
+      "community": 2,
+      "norm_label": "analyze()"
+    },
+    {
+      "label": "simulate()",
+      "file_type": "code",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L70",
+      "id": "birthday_cli_simulate",
+      "community": 2,
+      "norm_label": "simulate()"
+    },
+    {
+      "label": "plot()",
+      "file_type": "code",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L96",
+      "id": "birthday_cli_plot",
+      "community": 2,
+      "norm_label": "plot()"
+    },
+    {
+      "label": "all()",
+      "file_type": "code",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L136",
+      "id": "birthday_cli_all",
+      "community": 2,
+      "norm_label": "all()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L152",
+      "id": "birthday_cli_main",
+      "community": 2,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Command-line interface for the Birthday Paradox analysis.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L1",
+      "id": "birthday_cli_rationale_1",
+      "community": 2,
+      "norm_label": "command-line interface for the birthday paradox analysis."
+    },
+    {
+      "label": "Birthday Paradox: analytical + Monte Carlo study with animated plots.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L30",
+      "id": "birthday_cli_rationale_30",
+      "community": 2,
+      "norm_label": "birthday paradox: analytical + monte carlo study with animated plots."
+    },
+    {
+      "label": "Print analytical probabilities for a given group size.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L46",
+      "id": "birthday_cli_rationale_46",
+      "community": 2,
+      "norm_label": "print analytical probabilities for a given group size."
+    },
+    {
+      "label": "Run a Monte Carlo simulation and compare against theory.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L71",
+      "id": "birthday_cli_rationale_71",
+      "community": 2,
+      "norm_label": "run a monte carlo simulation and compare against theory."
+    },
+    {
+      "label": "Generate all PNG plots (and GIF animations unless --no-animations).",
+      "file_type": "rationale",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L99",
+      "id": "birthday_cli_rationale_99",
+      "community": 2,
+      "norm_label": "generate all png plots (and gif animations unless --no-animations)."
+    },
+    {
+      "label": "Run analyze + plot + animations end-to-end.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L137",
+      "id": "birthday_cli_rationale_137",
+      "community": 2,
+      "norm_label": "run analyze + plot + animations end-to-end."
+    },
+    {
+      "label": "matplotlib_viz.py",
+      "file_type": "code",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L1",
+      "id": "src_birthday_visualization_matplotlib_viz_py",
+      "community": 7,
+      "norm_label": "matplotlib_viz.py"
+    },
+    {
+      "label": "MatplotlibVisualizer",
+      "file_type": "code",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L23",
+      "id": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "community": 1,
+      "norm_label": "matplotlibvisualizer"
+    },
+    {
+      "label": "output_dir()",
+      "file_type": "code",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L48",
+      "id": "visualization_matplotlib_viz_output_dir",
+      "community": 7,
+      "norm_label": "output_dir()"
+    },
+    {
+      "label": "._apply_style()",
+      "file_type": "code",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L51",
+      "id": "visualization_matplotlib_viz_matplotlibvisualizer_apply_style",
+      "community": 1,
+      "norm_label": "._apply_style()"
+    },
+    {
+      "label": ".plot_probability_curve()",
+      "file_type": "code",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L61",
+      "id": "visualization_matplotlib_viz_matplotlibvisualizer_plot_probability_curve",
+      "community": 1,
+      "norm_label": ".plot_probability_curve()"
+    },
+    {
+      "label": ".plot_simulation_vs_theory()",
+      "file_type": "code",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L101",
+      "id": "visualization_matplotlib_viz_matplotlibvisualizer_plot_simulation_vs_theory",
+      "community": 1,
+      "norm_label": ".plot_simulation_vs_theory()"
+    },
+    {
+      "label": ".plot_expected_collisions()",
+      "file_type": "code",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L142",
+      "id": "visualization_matplotlib_viz_matplotlibvisualizer_plot_expected_collisions",
+      "community": 1,
+      "norm_label": ".plot_expected_collisions()"
+    },
+    {
+      "label": ".plot_first_collision_distribution()",
+      "file_type": "code",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L181",
+      "id": "visualization_matplotlib_viz_matplotlibvisualizer_plot_first_collision_distribution",
+      "community": 1,
+      "norm_label": ".plot_first_collision_distribution()"
+    },
+    {
+      "label": ".animate_probability_buildup()",
+      "file_type": "code",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L228",
+      "id": "visualization_matplotlib_viz_matplotlibvisualizer_animate_probability_buildup",
+      "community": 1,
+      "norm_label": ".animate_probability_buildup()"
+    },
+    {
+      "label": ".animate_room_filling()",
+      "file_type": "code",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L292",
+      "id": "visualization_matplotlib_viz_matplotlibvisualizer_animate_room_filling",
+      "community": 1,
+      "norm_label": ".animate_room_filling()"
+    },
+    {
+      "label": ".animate_simulation_convergence()",
+      "file_type": "code",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L414",
+      "id": "visualization_matplotlib_viz_matplotlibvisualizer_animate_simulation_convergence",
+      "community": 1,
+      "norm_label": ".animate_simulation_convergence()"
+    },
+    {
+      "label": ".create_all()",
+      "file_type": "code",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L484",
+      "id": "visualization_matplotlib_viz_matplotlibvisualizer_create_all",
+      "community": 1,
+      "norm_label": ".create_all()"
+    },
+    {
+      "label": "Matplotlib visualizations and animations for the Birthday Paradox.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L1",
+      "id": "visualization_matplotlib_viz_rationale_1",
+      "community": 7,
+      "norm_label": "matplotlib visualizations and animations for the birthday paradox."
+    },
+    {
+      "label": "Generate publication-quality plots and GIFs for the Birthday Paradox.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L24",
+      "id": "visualization_matplotlib_viz_rationale_24",
+      "community": 1,
+      "norm_label": "generate publication-quality plots and gifs for the birthday paradox."
+    },
+    {
+      "label": "P(match) vs n: exact, Taylor approximation, 50%/99% reference lines.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L62",
+      "id": "visualization_matplotlib_viz_rationale_62",
+      "community": 1,
+      "norm_label": "p(match) vs n: exact, taylor approximation, 50%/99% reference lines."
+    },
+    {
+      "label": "Overlay Monte Carlo empirical curve on the exact theoretical curve.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L104",
+      "id": "visualization_matplotlib_viz_rationale_104",
+      "community": 1,
+      "norm_label": "overlay monte carlo empirical curve on the exact theoretical curve."
+    },
+    {
+      "label": "E[# matching pairs] vs n.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L143",
+      "id": "visualization_matplotlib_viz_rationale_143",
+      "community": 1,
+      "norm_label": "e[# matching pairs] vs n."
+    },
+    {
+      "label": "Histogram of the group-size index where the first collision appears.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L184",
+      "id": "visualization_matplotlib_viz_rationale_184",
+      "community": 1,
+      "norm_label": "histogram of the group-size index where the first collision appears."
+    },
+    {
+      "label": "GIF: probability curve drawing itself frame-by-frame.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L231",
+      "id": "visualization_matplotlib_viz_rationale_231",
+      "community": 1,
+      "norm_label": "gif: probability curve drawing itself frame-by-frame."
+    },
+    {
+      "label": "GIF: people enter a room one at a time, each gets a random birthday;         the",
+      "file_type": "rationale",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L295",
+      "id": "visualization_matplotlib_viz_rationale_295",
+      "community": 1,
+      "norm_label": "gif: people enter a room one at a time, each gets a random birthday;         the"
+    },
+    {
+      "label": "GIF: running empirical estimate of P(match) for fixed n approaching theory.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L418",
+      "id": "visualization_matplotlib_viz_rationale_418",
+      "community": 1,
+      "norm_label": "gif: running empirical estimate of p(match) for fixed n approaching theory."
+    },
+    {
+      "label": "Generate every static plot and animation.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L485",
+      "id": "visualization_matplotlib_viz_rationale_485",
+      "community": 1,
+      "norm_label": "generate every static plot and animation."
+    },
+    {
+      "label": "config.py",
+      "file_type": "code",
+      "source_file": "src/birthday/core/config.py",
+      "source_location": "L1",
+      "id": "src_birthday_core_config_py",
+      "community": 2,
+      "norm_label": "config.py"
+    },
+    {
+      "label": "BirthdayConfig",
+      "file_type": "code",
+      "source_file": "src/birthday/core/config.py",
+      "source_location": "L9",
+      "id": "core_config_birthdayconfig",
+      "community": 2,
+      "norm_label": "birthdayconfig"
+    },
+    {
+      "label": ".__post_init__()",
+      "file_type": "code",
+      "source_file": "src/birthday/core/config.py",
+      "source_location": "L22",
+      "id": "core_config_birthdayconfig_post_init",
+      "community": 2,
+      "norm_label": ".__post_init__()"
+    },
+    {
+      "label": "pigeonhole_bound()",
+      "file_type": "code",
+      "source_file": "src/birthday/core/config.py",
+      "source_location": "L33",
+      "id": "core_config_pigeonhole_bound",
+      "community": 2,
+      "norm_label": "pigeonhole_bound()"
+    },
+    {
+      "label": "Immutable configuration for the Birthday Paradox model.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/core/config.py",
+      "source_location": "L1",
+      "id": "core_config_rationale_1",
+      "community": 2,
+      "norm_label": "immutable configuration for the birthday paradox model."
+    },
+    {
+      "label": "Immutable configuration for the Birthday Paradox.      Attributes:         days_",
+      "file_type": "rationale",
+      "source_file": "src/birthday/core/config.py",
+      "source_location": "L10",
+      "id": "core_config_rationale_10",
+      "community": 2,
+      "norm_label": "immutable configuration for the birthday paradox.      attributes:         days_"
+    },
+    {
+      "label": "Group size at which collision is guaranteed (D + 1).",
+      "file_type": "rationale",
+      "source_file": "src/birthday/core/config.py",
+      "source_location": "L34",
+      "id": "core_config_rationale_34",
+      "community": 9,
+      "norm_label": "group size at which collision is guaranteed (d + 1)."
+    },
+    {
+      "label": "models.py",
+      "file_type": "code",
+      "source_file": "src/birthday/core/models.py",
+      "source_location": "L1",
+      "id": "src_birthday_core_models_py",
+      "community": 4,
+      "norm_label": "models.py"
+    },
+    {
+      "label": "SimulationResult",
+      "file_type": "code",
+      "source_file": "src/birthday/core/models.py",
+      "source_location": "L12",
+      "id": "core_models_simulationresult",
+      "community": 4,
+      "norm_label": "simulationresult"
+    },
+    {
+      "label": "empirical_probability()",
+      "file_type": "code",
+      "source_file": "src/birthday/core/models.py",
+      "source_location": "L30",
+      "id": "core_models_empirical_probability",
+      "community": 4,
+      "norm_label": "empirical_probability()"
+    },
+    {
+      "label": "CollisionCurve",
+      "file_type": "code",
+      "source_file": "src/birthday/core/models.py",
+      "source_location": "L36",
+      "id": "core_models_collisioncurve",
+      "community": 4,
+      "norm_label": "collisioncurve"
+    },
+    {
+      "label": "Result containers for simulations and analyses.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/core/models.py",
+      "source_location": "L1",
+      "id": "core_models_rationale_1",
+      "community": 4,
+      "norm_label": "result containers for simulations and analyses."
+    },
+    {
+      "label": "Outcome of a Monte Carlo run for a single group size.      Attributes:         g",
+      "file_type": "rationale",
+      "source_file": "src/birthday/core/models.py",
+      "source_location": "L13",
+      "id": "core_models_rationale_13",
+      "community": 4,
+      "norm_label": "outcome of a monte carlo run for a single group size.      attributes:         g"
+    },
+    {
+      "label": "Empirical P(at least one shared birthday).",
+      "file_type": "rationale",
+      "source_file": "src/birthday/core/models.py",
+      "source_location": "L31",
+      "id": "core_models_rationale_31",
+      "community": 10,
+      "norm_label": "empirical p(at least one shared birthday)."
+    },
+    {
+      "label": "Probability curve across group sizes.      Attributes:         group_sizes: Arra",
+      "file_type": "rationale",
+      "source_file": "src/birthday/core/models.py",
+      "source_location": "L37",
+      "id": "core_models_rationale_37",
+      "community": 4,
+      "norm_label": "probability curve across group sizes.      attributes:         group_sizes: arra"
+    },
+    {
+      "label": "monte_carlo.py",
+      "file_type": "code",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L1",
+      "id": "src_birthday_simulation_monte_carlo_py",
+      "community": 5,
+      "norm_label": "monte_carlo.py"
+    },
+    {
+      "label": "MonteCarloSimulator",
+      "file_type": "code",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L16",
+      "id": "simulation_monte_carlo_montecarlosimulator",
+      "community": 1,
+      "norm_label": "montecarlosimulator"
+    },
+    {
+      "label": "seed()",
+      "file_type": "code",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L37",
+      "id": "simulation_monte_carlo_seed",
+      "community": 5,
+      "norm_label": "seed()"
+    },
+    {
+      "label": ".reset_seed()",
+      "file_type": "code",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L40",
+      "id": "simulation_monte_carlo_montecarlosimulator_reset_seed",
+      "community": 1,
+      "norm_label": ".reset_seed()"
+    },
+    {
+      "label": ".simulate_group()",
+      "file_type": "code",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L44",
+      "id": "simulation_monte_carlo_montecarlosimulator_simulate_group",
+      "community": 4,
+      "norm_label": ".simulate_group()"
+    },
+    {
+      "label": ".simulate_curve()",
+      "file_type": "code",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L79",
+      "id": "simulation_monte_carlo_montecarlosimulator_simulate_curve",
+      "community": 1,
+      "norm_label": ".simulate_curve()"
+    },
+    {
+      "label": ".simulate_first_collision_distribution()",
+      "file_type": "code",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L110",
+      "id": "simulation_monte_carlo_montecarlosimulator_simulate_first_collision_distribution",
+      "community": 1,
+      "norm_label": ".simulate_first_collision_distribution()"
+    },
+    {
+      "label": "Monte Carlo simulation of the Birthday Paradox.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L1",
+      "id": "simulation_monte_carlo_rationale_1",
+      "community": 5,
+      "norm_label": "monte carlo simulation of the birthday paradox."
+    },
+    {
+      "label": "Vectorized Monte Carlo simulator for the Birthday Paradox.      For each trial w",
+      "file_type": "rationale",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L17",
+      "id": "simulation_monte_carlo_rationale_17",
+      "community": 1,
+      "norm_label": "vectorized monte carlo simulator for the birthday paradox.      for each trial w"
+    },
+    {
+      "label": "Run `n_trials` independent rooms of `group_size` people.          Returns a Simu",
+      "file_type": "rationale",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L45",
+      "id": "simulation_monte_carlo_rationale_45",
+      "community": 4,
+      "norm_label": "run `n_trials` independent rooms of `group_size` people.          returns a simu"
+    },
+    {
+      "label": "Empirical P(match) for each group size.          Optimised via a single big batc",
+      "file_type": "rationale",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L82",
+      "id": "simulation_monte_carlo_rationale_82",
+      "community": 1,
+      "norm_label": "empirical p(match) for each group size.          optimised via a single big batc"
+    },
+    {
+      "label": "Distribution of the index at which the first collision appears.          Returns",
+      "file_type": "rationale",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L113",
+      "id": "simulation_monte_carlo_rationale_113",
+      "community": 1,
+      "norm_label": "distribution of the index at which the first collision appears.          returns"
+    },
+    {
+      "label": "probability.py",
+      "file_type": "code",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L1",
+      "id": "src_birthday_math_probability_py",
+      "community": 5,
+      "norm_label": "probability.py"
+    },
+    {
+      "label": "BirthdayProbability",
+      "file_type": "code",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L14",
+      "id": "math_probability_birthdayprobability",
+      "community": 3,
+      "norm_label": "birthdayprobability"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L26",
+      "id": "math_probability_birthdayprobability_init",
+      "community": 1,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": "config()",
+      "file_type": "code",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L30",
+      "id": "math_probability_config",
+      "community": 5,
+      "norm_label": "config()"
+    },
+    {
+      "label": ".prob_no_match_exact()",
+      "file_type": "code",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L33",
+      "id": "math_probability_birthdayprobability_prob_no_match_exact",
+      "community": 3,
+      "norm_label": ".prob_no_match_exact()"
+    },
+    {
+      "label": ".prob_match_exact()",
+      "file_type": "code",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L48",
+      "id": "math_probability_birthdayprobability_prob_match_exact",
+      "community": 3,
+      "norm_label": ".prob_match_exact()"
+    },
+    {
+      "label": ".prob_match_approx()",
+      "file_type": "code",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L52",
+      "id": "math_probability_birthdayprobability_prob_match_approx",
+      "community": 3,
+      "norm_label": ".prob_match_approx()"
+    },
+    {
+      "label": ".expected_collisions()",
+      "file_type": "code",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L59",
+      "id": "math_probability_birthdayprobability_expected_collisions",
+      "community": 3,
+      "norm_label": ".expected_collisions()"
+    },
+    {
+      "label": ".expected_unique_birthdays()",
+      "file_type": "code",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L66",
+      "id": "math_probability_birthdayprobability_expected_unique_birthdays",
+      "community": 3,
+      "norm_label": ".expected_unique_birthdays()"
+    },
+    {
+      "label": ".median_group_size()",
+      "file_type": "code",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L75",
+      "id": "math_probability_birthdayprobability_median_group_size",
+      "community": 3,
+      "norm_label": ".median_group_size()"
+    },
+    {
+      "label": ".probability_curve()",
+      "file_type": "code",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L90",
+      "id": "math_probability_birthdayprobability_probability_curve",
+      "community": 3,
+      "norm_label": ".probability_curve()"
+    },
+    {
+      "label": ".prob_at_least_k_share()",
+      "file_type": "code",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L106",
+      "id": "math_probability_birthdayprobability_prob_at_least_k_share",
+      "community": 3,
+      "norm_label": ".prob_at_least_k_share()"
+    },
+    {
+      "label": "Analytical probability formulas for the Birthday Paradox.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L1",
+      "id": "math_probability_rationale_1",
+      "community": 5,
+      "norm_label": "analytical probability formulas for the birthday paradox."
+    },
+    {
+      "label": "Closed-form probability calculations for the Birthday Paradox.      Implements t",
+      "file_type": "rationale",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L15",
+      "id": "math_probability_rationale_15",
+      "community": 3,
+      "norm_label": "closed-form probability calculations for the birthday paradox.      implements t"
+    },
+    {
+      "label": "Exact P(all n birthdays distinct).          Uses log-gamma for numerical stabili",
+      "file_type": "rationale",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L34",
+      "id": "math_probability_rationale_34",
+      "community": 3,
+      "norm_label": "exact p(all n birthdays distinct).          uses log-gamma for numerical stabili"
+    },
+    {
+      "label": "Exact P(at least one shared birthday).",
+      "file_type": "rationale",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L49",
+      "id": "math_probability_rationale_49",
+      "community": 3,
+      "norm_label": "exact p(at least one shared birthday)."
+    },
+    {
+      "label": "Taylor approximation P(match) ~= 1 - exp(-n(n-1)/(2D)).",
+      "file_type": "rationale",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L53",
+      "id": "math_probability_rationale_53",
+      "community": 3,
+      "norm_label": "taylor approximation p(match) ~= 1 - exp(-n(n-1)/(2d))."
+    },
+    {
+      "label": "Expected number of matching pairs = C(n,2) / D.",
+      "file_type": "rationale",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L60",
+      "id": "math_probability_rationale_60",
+      "community": 3,
+      "norm_label": "expected number of matching pairs = c(n,2) / d."
+    },
+    {
+      "label": "E[# distinct birthdays] = D * (1 - (1 - 1/D)^n).          Each day is \"missed\" w",
+      "file_type": "rationale",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L67",
+      "id": "math_probability_rationale_67",
+      "community": 3,
+      "norm_label": "e[# distinct birthdays] = d * (1 - (1 - 1/d)^n).          each day is \"missed\" w"
+    },
+    {
+      "label": "Smallest n s.t. P(match) >= 0.5.          Closed-form approximation: n ~= ceil(",
+      "file_type": "rationale",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L76",
+      "id": "math_probability_rationale_76",
+      "community": 3,
+      "norm_label": "smallest n s.t. p(match) >= 0.5.          closed-form approximation: n ~= ceil("
+    },
+    {
+      "label": "Compute exact + approx curves for n = 1..max_n.          Returns (group_sizes, e",
+      "file_type": "rationale",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L93",
+      "id": "math_probability_rationale_93",
+      "community": 3,
+      "norm_label": "compute exact + approx curves for n = 1..max_n.          returns (group_sizes, e"
+    },
+    {
+      "label": "P(at least k people share a single birthday).          Closed-form is intractabl",
+      "file_type": "rationale",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L107",
+      "id": "math_probability_rationale_107",
+      "community": 3,
+      "norm_label": "p(at least k people share a single birthday).          closed-form is intractabl"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_mode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_started_at",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_updated_at",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_current_cycle",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_cycles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_phase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_issues",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_session_id",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_paused_until",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_rate_limit_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_last_error",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_effort_hints",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_requirements_hash",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_base_commit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_token_usage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_session_mode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_client_alive_at",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_phase2_batch_id",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_repo",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_prompt_hashes",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_sdk_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_gemini_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_codex_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_cache_prewarmed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_cache_ttl_probe",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_phase6_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_vigil_triggered",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "code_generator_state_json",
+      "target": "code_generator_state_phase8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "code_generator_state_repo",
+      "target": "code_generator_state_repo_host",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "code_generator_state_repo",
+      "target": "code_generator_state_repo_owner",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "code_generator_state_repo",
+      "target": "code_generator_state_repo_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/state.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "code_generator_state_repo",
+      "target": "code_generator_state_repo_full",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "src_birthday_cli_py",
+      "target": "birthday_cli_setup_logging",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "src_birthday_cli_py",
+      "target": "birthday_cli_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "src_birthday_cli_py",
+      "target": "birthday_cli_config_options",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "src_birthday_cli_py",
+      "target": "birthday_cli_analyze",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "src_birthday_cli_py",
+      "target": "birthday_cli_simulate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "src_birthday_cli_py",
+      "target": "birthday_cli_plot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "src_birthday_cli_py",
+      "target": "birthday_cli_all",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "src_birthday_cli_py",
+      "target": "birthday_cli_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "birthday_cli_rationale_1",
+      "target": "src_birthday_cli_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "birthday_cli_cli",
+      "target": "birthday_cli_setup_logging",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L153",
+      "weight": 1.0,
+      "source": "birthday_cli_main",
+      "target": "birthday_cli_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "birthday_cli_rationale_30",
+      "target": "birthday_cli_cli",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "birthday_cli_rationale_46",
+      "target": "birthday_cli_analyze",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "birthday_cli_analyze",
+      "target": "core_config_birthdayconfig"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "birthday_cli_analyze",
+      "target": "math_probability_birthdayprobability"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "birthday_cli_rationale_71",
+      "target": "birthday_cli_simulate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "birthday_cli_simulate",
+      "target": "core_config_birthdayconfig"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "birthday_cli_simulate",
+      "target": "simulation_monte_carlo_montecarlosimulator"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "birthday_cli_simulate",
+      "target": "math_probability_birthdayprobability"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "birthday_cli_rationale_99",
+      "target": "birthday_cli_plot",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "birthday_cli_plot",
+      "target": "core_config_birthdayconfig"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "birthday_cli_plot",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "birthday_cli_rationale_137",
+      "target": "birthday_cli_all",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "birthday_cli_all",
+      "target": "core_config_birthdayconfig"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "birthday_cli_all",
+      "target": "math_probability_birthdayprobability"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/birthday/cli.py",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "birthday_cli_all",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "src_birthday_visualization_matplotlib_viz_py",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "src_birthday_visualization_matplotlib_viz_py",
+      "target": "visualization_matplotlib_viz_output_dir",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_rationale_1",
+      "target": "src_birthday_visualization_matplotlib_viz_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "target": "math_probability_birthdayprobability_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_apply_style",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_plot_probability_curve",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L101",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_plot_simulation_vs_theory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_plot_expected_collisions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L181",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_plot_first_collision_distribution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L228",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_animate_probability_buildup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L292",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_animate_room_filling",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L414",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_animate_simulation_convergence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L484",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_create_all",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_rationale_24",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L15",
+      "weight": 0.8,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "target": "core_config_birthdayconfig",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L16",
+      "weight": 0.8,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "target": "math_probability_birthdayprobability",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L17",
+      "weight": 0.8,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer",
+      "target": "simulation_monte_carlo_montecarlosimulator",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer_plot_probability_curve",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_apply_style",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer_plot_simulation_vs_theory",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_apply_style",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer_plot_expected_collisions",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_apply_style",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L185",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer_plot_first_collision_distribution",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_apply_style",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L232",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer_animate_probability_buildup",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_apply_style",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L299",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer_animate_room_filling",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_apply_style",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L421",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer_animate_simulation_convergence",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_apply_style",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L488",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer_create_all",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_plot_probability_curve",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_rationale_62",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_plot_probability_curve",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L489",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer_create_all",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_plot_simulation_vs_theory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_rationale_104",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_plot_simulation_vs_theory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L490",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer_create_all",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_plot_expected_collisions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_rationale_143",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_plot_expected_collisions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L491",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer_create_all",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_plot_first_collision_distribution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L184",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_rationale_184",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_plot_first_collision_distribution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L492",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer_create_all",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_animate_probability_buildup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L231",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_rationale_231",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_animate_probability_buildup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L493",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer_create_all",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_animate_room_filling",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L295",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_rationale_295",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_animate_room_filling",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L494",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_matplotlibvisualizer_create_all",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_animate_simulation_convergence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L418",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_rationale_418",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_animate_simulation_convergence",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L485",
+      "weight": 1.0,
+      "source": "visualization_matplotlib_viz_rationale_485",
+      "target": "visualization_matplotlib_viz_matplotlibvisualizer_create_all",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/core/config.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "src_birthday_core_config_py",
+      "target": "core_config_birthdayconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/core/config.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "src_birthday_core_config_py",
+      "target": "core_config_pigeonhole_bound",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/core/config.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "core_config_rationale_1",
+      "target": "src_birthday_core_config_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/core/config.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "core_config_birthdayconfig",
+      "target": "core_config_birthdayconfig_post_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/core/config.py",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "core_config_rationale_10",
+      "target": "core_config_birthdayconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L10",
+      "weight": 0.8,
+      "source": "simulation_monte_carlo_montecarlosimulator",
+      "target": "core_config_birthdayconfig",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L11",
+      "weight": 0.8,
+      "source": "math_probability_birthdayprobability",
+      "target": "core_config_birthdayconfig",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/core/models.py",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "src_birthday_core_models_py",
+      "target": "core_models_simulationresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/core/models.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_birthday_core_models_py",
+      "target": "core_models_empirical_probability",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/core/models.py",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "src_birthday_core_models_py",
+      "target": "core_models_collisioncurve",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/core/models.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "core_models_rationale_1",
+      "target": "src_birthday_core_models_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/core/models.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "core_models_rationale_13",
+      "target": "core_models_simulationresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "uses",
+      "confidence": "INFERRED",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L11",
+      "weight": 0.8,
+      "source": "simulation_monte_carlo_montecarlosimulator",
+      "target": "core_models_simulationresult",
+      "confidence_score": 0.5
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L72",
+      "weight": 1.0,
+      "source": "simulation_monte_carlo_montecarlosimulator_simulate_group",
+      "target": "core_models_simulationresult"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/core/models.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "core_models_rationale_37",
+      "target": "core_models_collisioncurve",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "src_birthday_simulation_monte_carlo_py",
+      "target": "simulation_monte_carlo_montecarlosimulator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "src_birthday_simulation_monte_carlo_py",
+      "target": "math_probability_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "src_birthday_simulation_monte_carlo_py",
+      "target": "simulation_monte_carlo_seed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "simulation_monte_carlo_rationale_1",
+      "target": "src_birthday_simulation_monte_carlo_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "context": "call",
+      "confidence_score": 0.8,
+      "source": "math_probability_birthdayprobability_init",
+      "target": "simulation_monte_carlo_montecarlosimulator"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "simulation_monte_carlo_montecarlosimulator",
+      "target": "simulation_monte_carlo_montecarlosimulator_reset_seed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "simulation_monte_carlo_montecarlosimulator",
+      "target": "simulation_monte_carlo_montecarlosimulator_simulate_group",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "simulation_monte_carlo_montecarlosimulator",
+      "target": "simulation_monte_carlo_montecarlosimulator_simulate_curve",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "simulation_monte_carlo_montecarlosimulator",
+      "target": "simulation_monte_carlo_montecarlosimulator_simulate_first_collision_distribution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "simulation_monte_carlo_rationale_17",
+      "target": "simulation_monte_carlo_montecarlosimulator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "simulation_monte_carlo_rationale_45",
+      "target": "simulation_monte_carlo_montecarlosimulator_simulate_group",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "simulation_monte_carlo_rationale_82",
+      "target": "simulation_monte_carlo_montecarlosimulator_simulate_curve",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/simulation/monte_carlo.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "simulation_monte_carlo_rationale_113",
+      "target": "simulation_monte_carlo_montecarlosimulator_simulate_first_collision_distribution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "src_birthday_math_probability_py",
+      "target": "math_probability_birthdayprobability",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "src_birthday_math_probability_py",
+      "target": "math_probability_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "math_probability_rationale_1",
+      "target": "src_birthday_math_probability_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "source_file": "src/birthday/visualization/matplotlib_viz.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "context": "call",
+      "confidence_score": 0.8,
+      "source": "math_probability_birthdayprobability_init",
+      "target": "math_probability_birthdayprobability"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "math_probability_birthdayprobability",
+      "target": "math_probability_birthdayprobability_prob_no_match_exact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "math_probability_birthdayprobability",
+      "target": "math_probability_birthdayprobability_prob_match_exact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "math_probability_birthdayprobability",
+      "target": "math_probability_birthdayprobability_prob_match_approx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "math_probability_birthdayprobability",
+      "target": "math_probability_birthdayprobability_expected_collisions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "math_probability_birthdayprobability",
+      "target": "math_probability_birthdayprobability_expected_unique_birthdays",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "math_probability_birthdayprobability",
+      "target": "math_probability_birthdayprobability_median_group_size",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "math_probability_birthdayprobability",
+      "target": "math_probability_birthdayprobability_probability_curve",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L106",
+      "weight": 1.0,
+      "source": "math_probability_birthdayprobability",
+      "target": "math_probability_birthdayprobability_prob_at_least_k_share",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "math_probability_rationale_15",
+      "target": "math_probability_birthdayprobability",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "math_probability_birthdayprobability_prob_match_exact",
+      "target": "math_probability_birthdayprobability_prob_no_match_exact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "math_probability_rationale_34",
+      "target": "math_probability_birthdayprobability_prob_no_match_exact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "math_probability_birthdayprobability_median_group_size",
+      "target": "math_probability_birthdayprobability_prob_match_exact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "math_probability_birthdayprobability_probability_curve",
+      "target": "math_probability_birthdayprobability_prob_match_exact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "math_probability_birthdayprobability_prob_at_least_k_share",
+      "target": "math_probability_birthdayprobability_prob_match_exact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "math_probability_rationale_49",
+      "target": "math_probability_birthdayprobability_prob_match_exact",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "math_probability_birthdayprobability_probability_curve",
+      "target": "math_probability_birthdayprobability_prob_match_approx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "math_probability_rationale_53",
+      "target": "math_probability_birthdayprobability_prob_match_approx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "math_probability_rationale_60",
+      "target": "math_probability_birthdayprobability_expected_collisions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "math_probability_rationale_67",
+      "target": "math_probability_birthdayprobability_expected_unique_birthdays",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "math_probability_rationale_76",
+      "target": "math_probability_birthdayprobability_median_group_size",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "math_probability_rationale_93",
+      "target": "math_probability_birthdayprobability_probability_curve",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "src/birthday/math/probability.py",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "math_probability_rationale_107",
+      "target": "math_probability_birthdayprobability_prob_at_least_k_share",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "a43c7e5cefd8250aa816d0cff9a36b5313b8466e"
+}
