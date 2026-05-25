@@ -648,7 +648,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L1",
       "id": "tests_test_plots_py",
-      "community": 19,
+      "community": 1,
       "norm_label": "test_plots.py"
     },
     {
@@ -657,7 +657,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L18",
       "id": "tests_test_plots_config",
-      "community": 19,
+      "community": 1,
       "norm_label": "config()"
     },
     {
@@ -666,7 +666,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L23",
       "id": "tests_test_plots_viz",
-      "community": 19,
+      "community": 1,
       "norm_label": "viz()"
     },
     {
@@ -675,7 +675,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L27",
       "id": "tests_test_plots_testplotkcollisioncurves",
-      "community": 19,
+      "community": 1,
       "norm_label": "testplotkcollisioncurves"
     },
     {
@@ -684,7 +684,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L28",
       "id": "tests_test_plots_testplotkcollisioncurves_test_returns_path_when_save_true",
-      "community": 19,
+      "community": 1,
       "norm_label": ".test_returns_path_when_save_true()"
     },
     {
@@ -693,7 +693,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L34",
       "id": "tests_test_plots_testplotkcollisioncurves_test_returns_none_when_save_false",
-      "community": 19,
+      "community": 1,
       "norm_label": ".test_returns_none_when_save_false()"
     },
     {
@@ -702,7 +702,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L38",
       "id": "tests_test_plots_testplotkcollisioncurves_test_file_has_content",
-      "community": 19,
+      "community": 1,
       "norm_label": ".test_file_has_content()"
     },
     {
@@ -711,7 +711,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L45",
       "id": "tests_test_plots_test_calls_prob_methods",
-      "community": 19,
+      "community": 1,
       "norm_label": "test_calls_prob_methods()"
     },
     {
@@ -720,7 +720,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L59",
       "id": "tests_test_plots_test_max_n_respects_config",
-      "community": 19,
+      "community": 1,
       "norm_label": "test_max_n_respects_config()"
     },
     {
@@ -729,7 +729,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L71",
       "id": "tests_test_plots_testanimatekcollision",
-      "community": 33,
+      "community": 1,
       "norm_label": "testanimatekcollision"
     },
     {
@@ -738,7 +738,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L72",
       "id": "tests_test_plots_testanimatekcollision_test_returns_path_when_save_true",
-      "community": 33,
+      "community": 1,
       "norm_label": ".test_returns_path_when_save_true()"
     },
     {
@@ -747,7 +747,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L78",
       "id": "tests_test_plots_testanimatekcollision_test_returns_empty_list_when_save_false",
-      "community": 33,
+      "community": 1,
       "norm_label": ".test_returns_empty_list_when_save_false()"
     },
     {
@@ -756,7 +756,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L82",
       "id": "tests_test_plots_testanimatekcollision_test_file_has_content",
-      "community": 33,
+      "community": 1,
       "norm_label": ".test_file_has_content()"
     },
     {
@@ -765,7 +765,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L89",
       "id": "tests_test_plots_test_precomputes_curves",
-      "community": 19,
+      "community": 1,
       "norm_label": "test_precomputes_curves()"
     },
     {
@@ -774,7 +774,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L100",
       "id": "tests_test_plots_testanimatekcollision_test_uses_animation_writer",
-      "community": 33,
+      "community": 1,
       "norm_label": ".test_uses_animation_writer()"
     },
     {
@@ -783,7 +783,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L111",
       "id": "tests_test_plots_testplotapproximationerror",
-      "community": 34,
+      "community": 1,
       "norm_label": "testplotapproximationerror"
     },
     {
@@ -792,7 +792,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L112",
       "id": "tests_test_plots_testplotapproximationerror_test_returns_path_when_save_true",
-      "community": 34,
+      "community": 1,
       "norm_label": ".test_returns_path_when_save_true()"
     },
     {
@@ -801,7 +801,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L118",
       "id": "tests_test_plots_testplotapproximationerror_test_returns_none_when_save_false",
-      "community": 34,
+      "community": 1,
       "norm_label": ".test_returns_none_when_save_false()"
     },
     {
@@ -810,7 +810,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L122",
       "id": "tests_test_plots_testplotapproximationerror_test_file_has_content",
-      "community": 34,
+      "community": 1,
       "norm_label": ".test_file_has_content()"
     },
     {
@@ -819,7 +819,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L128",
       "id": "tests_test_plots_test_uses_probability_curve",
-      "community": 19,
+      "community": 1,
       "norm_label": "test_uses_probability_curve()"
     },
     {
@@ -828,7 +828,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L141",
       "id": "tests_test_plots_test_max_error_below_threshold_for_d365",
-      "community": 19,
+      "community": 1,
       "norm_label": "test_max_error_below_threshold_for_d365()"
     },
     {
@@ -837,7 +837,7 @@
       "source_file": "tests/test_plots.py",
       "source_location": "L1",
       "id": "tests_test_plots_rationale_1",
-      "community": 19,
+      "community": 1,
       "norm_label": "tests for static plot methods in matplotlibvisualizer."
     },
     {
@@ -1980,7 +1980,7 @@
       "source_file": "tests/test_writers.py",
       "source_location": "L194",
       "id": "tests_test_writers_testintegrationwithmatplotlibvisualizer",
-      "community": 22,
+      "community": 1,
       "norm_label": "testintegrationwithmatplotlibvisualizer"
     },
     {
@@ -1989,7 +1989,7 @@
       "source_file": "tests/test_writers.py",
       "source_location": "L197",
       "id": "tests_test_writers_testintegrationwithmatplotlibvisualizer_test_visualizer_imports_and_uses_writer",
-      "community": 22,
+      "community": 1,
       "norm_label": ".test_visualizer_imports_and_uses_writer()"
     },
     {
@@ -1998,7 +1998,7 @@
       "source_file": "tests/test_writers.py",
       "source_location": "L205",
       "id": "tests_test_writers_testintegrationwithmatplotlibvisualizer_test_visualizer_has_mp4_defaults",
-      "community": 22,
+      "community": 1,
       "norm_label": ".test_visualizer_has_mp4_defaults()"
     },
     {
@@ -2016,7 +2016,7 @@
       "source_file": "tests/test_writers.py",
       "source_location": "L195",
       "id": "tests_test_writers_rationale_195",
-      "community": 22,
+      "community": 1,
       "norm_label": "verify matplotlibvisualizer can use animationwriter without inline writer= strin"
     },
     {
@@ -2439,7 +2439,7 @@
       "source_file": "tests/test_cli.py",
       "source_location": "L15",
       "id": "tests_test_cli_testcreateallproducestenfiles",
-      "community": 22,
+      "community": 3,
       "norm_label": "testcreateallproducestenfiles"
     },
     {
@@ -2448,7 +2448,7 @@
       "source_file": "tests/test_cli.py",
       "source_location": "L16",
       "id": "tests_test_cli_testcreateallproducestenfiles_test_returns_ten_files_with_no_mp4",
-      "community": 22,
+      "community": 3,
       "norm_label": ".test_returns_ten_files_with_no_mp4()"
     },
     {
@@ -2457,7 +2457,7 @@
       "source_file": "tests/test_cli.py",
       "source_location": "L27",
       "id": "tests_test_cli_testcreateallproducestenfiles_test_returns_fourteen_files_with_mp4",
-      "community": 22,
+      "community": 3,
       "norm_label": ".test_returns_fourteen_files_with_mp4()"
     },
     {
@@ -2466,7 +2466,7 @@
       "source_file": "tests/test_cli.py",
       "source_location": "L37",
       "id": "tests_test_cli_testcreateallproducestenfiles_test_k_collision_curves_uses_min_50k_trials",
-      "community": 22,
+      "community": 3,
       "norm_label": ".test_k_collision_curves_uses_min_50k_trials()"
     },
     {
@@ -3258,7 +3258,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L1",
       "id": "src_birthday_visualization_matplotlib_viz_py",
-      "community": 7,
+      "community": 1,
       "norm_label": "matplotlib_viz.py"
     },
     {
@@ -3267,7 +3267,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L26",
       "id": "visualization_matplotlib_viz_matplotlibvisualizer",
-      "community": 22,
+      "community": 1,
       "norm_label": "matplotlibvisualizer"
     },
     {
@@ -3276,7 +3276,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L34",
       "id": "visualization_matplotlib_viz_matplotlibvisualizer_init",
-      "community": 4,
+      "community": 11,
       "norm_label": ".__init__()"
     },
     {
@@ -3285,7 +3285,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L52",
       "id": "visualization_matplotlib_viz_output_dir",
-      "community": 7,
+      "community": 1,
       "norm_label": "output_dir()"
     },
     {
@@ -3303,7 +3303,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L59",
       "id": "visualization_matplotlib_viz_matplotlibvisualizer_save_animation",
-      "community": 49,
+      "community": 1,
       "norm_label": "._save_animation()"
     },
     {
@@ -3312,7 +3312,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L74",
       "id": "visualization_matplotlib_viz_matplotlibvisualizer_save_both",
-      "community": 20,
+      "community": 1,
       "norm_label": "._save_both()"
     },
     {
@@ -3321,7 +3321,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L93",
       "id": "visualization_matplotlib_viz_matplotlibvisualizer_plot_probability_curve",
-      "community": 49,
+      "community": 1,
       "norm_label": ".plot_probability_curve()"
     },
     {
@@ -3357,7 +3357,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L256",
       "id": "visualization_matplotlib_viz_matplotlibvisualizer_compute_k_curves",
-      "community": 32,
+      "community": 1,
       "norm_label": "._compute_k_curves()"
     },
     {
@@ -3366,7 +3366,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L279",
       "id": "visualization_matplotlib_viz_matplotlibvisualizer_plot_k_collision_curves",
-      "community": 32,
+      "community": 1,
       "norm_label": ".plot_k_collision_curves()"
     },
     {
@@ -3384,7 +3384,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L354",
       "id": "visualization_matplotlib_viz_matplotlibvisualizer_animate_probability_buildup",
-      "community": 20,
+      "community": 1,
       "norm_label": ".animate_probability_buildup()"
     },
     {
@@ -3393,7 +3393,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L414",
       "id": "visualization_matplotlib_viz_matplotlibvisualizer_animate_room_filling",
-      "community": 20,
+      "community": 1,
       "norm_label": ".animate_room_filling()"
     },
     {
@@ -3402,7 +3402,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L533",
       "id": "visualization_matplotlib_viz_matplotlibvisualizer_animate_simulation_convergence",
-      "community": 20,
+      "community": 1,
       "norm_label": ".animate_simulation_convergence()"
     },
     {
@@ -3411,7 +3411,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L595",
       "id": "visualization_matplotlib_viz_matplotlibvisualizer_animate_k_collision",
-      "community": 32,
+      "community": 1,
       "norm_label": ".animate_k_collision()"
     },
     {
@@ -3429,7 +3429,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L1",
       "id": "visualization_matplotlib_viz_rationale_1",
-      "community": 7,
+      "community": 1,
       "norm_label": "matplotlib visualizations and animations for the birthday paradox."
     },
     {
@@ -3438,7 +3438,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L27",
       "id": "visualization_matplotlib_viz_rationale_27",
-      "community": 22,
+      "community": 1,
       "norm_label": "generate publication-quality plots and gifs for the birthday paradox."
     },
     {
@@ -3447,7 +3447,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L62",
       "id": "visualization_matplotlib_viz_rationale_62",
-      "community": 49,
+      "community": 1,
       "norm_label": "save an animation using the configured writer; return path or none on failure."
     },
     {
@@ -3456,7 +3456,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L77",
       "id": "visualization_matplotlib_viz_rationale_77",
-      "community": 20,
+      "community": 1,
       "norm_label": "save animation as gif and optionally mp4; return all successful paths."
     },
     {
@@ -3465,7 +3465,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L94",
       "id": "visualization_matplotlib_viz_rationale_94",
-      "community": 49,
+      "community": 1,
       "norm_label": "p(match) vs n: exact, taylor approximation, 50%/99% reference lines."
     },
     {
@@ -3501,7 +3501,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L259",
       "id": "visualization_matplotlib_viz_rationale_259",
-      "community": 32,
+      "community": 1,
       "norm_label": "pre-compute k-collision probability curves for k = 2..5."
     },
     {
@@ -3510,7 +3510,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L282",
       "id": "visualization_matplotlib_viz_rationale_282",
-      "community": 32,
+      "community": 1,
       "norm_label": "p(\u2265 k share a birthday) vs n for k = 2..5."
     },
     {
@@ -3528,7 +3528,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L357",
       "id": "visualization_matplotlib_viz_rationale_357",
-      "community": 20,
+      "community": 1,
       "norm_label": "gif: probability curve drawing itself frame-by-frame."
     },
     {
@@ -3537,7 +3537,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L418",
       "id": "visualization_matplotlib_viz_rationale_418",
-      "community": 20,
+      "community": 1,
       "norm_label": "gif: people enter a room one at a time, each gets a random birthday;         the"
     },
     {
@@ -3546,7 +3546,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L537",
       "id": "visualization_matplotlib_viz_rationale_537",
-      "community": 20,
+      "community": 1,
       "norm_label": "gif: running empirical estimate of p(match) for fixed n approaching theory."
     },
     {
@@ -3555,7 +3555,7 @@
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L598",
       "id": "visualization_matplotlib_viz_rationale_598",
-      "community": 32,
+      "community": 1,
       "norm_label": "gif: k-collision curves drawing themselves frame-by-frame."
     },
     {
@@ -5137,7 +5137,7 @@
       "label": "God Nodes (most connected - your core abstractions)",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L55",
+      "source_location": "L57",
       "id": "memories_cycle_repo_map_god_nodes_most_connected_your_core_abstractions",
       "community": 37,
       "norm_label": "god nodes (most connected - your core abstractions)"
@@ -5146,25 +5146,25 @@
       "label": "Surprising Connections (you probably didn't know these)",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L67",
+      "source_location": "L69",
       "id": "memories_cycle_repo_map_surprising_connections_you_probably_didn_t_know_these",
       "community": 37,
       "norm_label": "surprising connections (you probably didn't know these)"
     },
     {
-      "label": "Communities (49 total, 7 thin omitted)",
+      "label": "Communities (50 total, 8 thin omitted)",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L79",
-      "id": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
+      "source_location": "L81",
+      "id": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
       "community": 37,
-      "norm_label": "communities (49 total, 7 thin omitted)"
+      "norm_label": "communities (50 total, 8 thin omitted)"
     },
     {
       "label": "Community 0 - \"Community 0\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L81",
+      "source_location": "L83",
       "id": "memories_cycle_repo_map_community_0_community_0",
       "community": 37,
       "norm_label": "community 0 - \"community 0\""
@@ -5173,7 +5173,7 @@
       "label": "Community 1 - \"Community 1\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L85",
+      "source_location": "L87",
       "id": "memories_cycle_repo_map_community_1_community_1",
       "community": 37,
       "norm_label": "community 1 - \"community 1\""
@@ -5182,7 +5182,7 @@
       "label": "Community 2 - \"Community 2\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L89",
+      "source_location": "L91",
       "id": "memories_cycle_repo_map_community_2_community_2",
       "community": 37,
       "norm_label": "community 2 - \"community 2\""
@@ -5191,7 +5191,7 @@
       "label": "Community 3 - \"Community 3\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L93",
+      "source_location": "L95",
       "id": "memories_cycle_repo_map_community_3_community_3",
       "community": 37,
       "norm_label": "community 3 - \"community 3\""
@@ -5200,7 +5200,7 @@
       "label": "Community 4 - \"Community 4\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L97",
+      "source_location": "L99",
       "id": "memories_cycle_repo_map_community_4_community_4",
       "community": 37,
       "norm_label": "community 4 - \"community 4\""
@@ -5209,7 +5209,7 @@
       "label": "Community 5 - \"Community 5\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L101",
+      "source_location": "L103",
       "id": "memories_cycle_repo_map_community_5_community_5",
       "community": 37,
       "norm_label": "community 5 - \"community 5\""
@@ -5218,7 +5218,7 @@
       "label": "Community 6 - \"Community 6\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L105",
+      "source_location": "L107",
       "id": "memories_cycle_repo_map_community_6_community_6",
       "community": 37,
       "norm_label": "community 6 - \"community 6\""
@@ -5227,7 +5227,7 @@
       "label": "Community 11 - \"Community 11\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L109",
+      "source_location": "L111",
       "id": "memories_cycle_repo_map_community_11_community_11",
       "community": 37,
       "norm_label": "community 11 - \"community 11\""
@@ -5236,7 +5236,7 @@
       "label": "Community 12 - \"Community 12\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L113",
+      "source_location": "L115",
       "id": "memories_cycle_repo_map_community_12_community_12",
       "community": 37,
       "norm_label": "community 12 - \"community 12\""
@@ -5245,7 +5245,7 @@
       "label": "Community 13 - \"Community 13\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L117",
+      "source_location": "L119",
       "id": "memories_cycle_repo_map_community_13_community_13",
       "community": 37,
       "norm_label": "community 13 - \"community 13\""
@@ -5254,7 +5254,7 @@
       "label": "Community 14 - \"Community 14\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L121",
+      "source_location": "L123",
       "id": "memories_cycle_repo_map_community_14_community_14",
       "community": 37,
       "norm_label": "community 14 - \"community 14\""
@@ -5263,7 +5263,7 @@
       "label": "Community 15 - \"Community 15\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L125",
+      "source_location": "L127",
       "id": "memories_cycle_repo_map_community_15_community_15",
       "community": 37,
       "norm_label": "community 15 - \"community 15\""
@@ -5272,7 +5272,7 @@
       "label": "Community 16 - \"Community 16\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L129",
+      "source_location": "L131",
       "id": "memories_cycle_repo_map_community_16_community_16",
       "community": 37,
       "norm_label": "community 16 - \"community 16\""
@@ -5281,7 +5281,7 @@
       "label": "Community 17 - \"Community 17\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L133",
+      "source_location": "L135",
       "id": "memories_cycle_repo_map_community_17_community_17",
       "community": 37,
       "norm_label": "community 17 - \"community 17\""
@@ -5290,7 +5290,7 @@
       "label": "Community 18 - \"Community 18\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L137",
+      "source_location": "L139",
       "id": "memories_cycle_repo_map_community_18_community_18",
       "community": 37,
       "norm_label": "community 18 - \"community 18\""
@@ -5299,7 +5299,7 @@
       "label": "Community 19 - \"Community 19\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L141",
+      "source_location": "L143",
       "id": "memories_cycle_repo_map_community_19_community_19",
       "community": 37,
       "norm_label": "community 19 - \"community 19\""
@@ -5308,7 +5308,7 @@
       "label": "Community 20 - \"Community 20\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L145",
+      "source_location": "L147",
       "id": "memories_cycle_repo_map_community_20_community_20",
       "community": 37,
       "norm_label": "community 20 - \"community 20\""
@@ -5317,7 +5317,7 @@
       "label": "Community 21 - \"Community 21\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L149",
+      "source_location": "L151",
       "id": "memories_cycle_repo_map_community_21_community_21",
       "community": 37,
       "norm_label": "community 21 - \"community 21\""
@@ -5326,7 +5326,7 @@
       "label": "Community 22 - \"Community 22\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L153",
+      "source_location": "L155",
       "id": "memories_cycle_repo_map_community_22_community_22",
       "community": 37,
       "norm_label": "community 22 - \"community 22\""
@@ -5335,7 +5335,7 @@
       "label": "Community 23 - \"Community 23\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L157",
+      "source_location": "L159",
       "id": "memories_cycle_repo_map_community_23_community_23",
       "community": 37,
       "norm_label": "community 23 - \"community 23\""
@@ -5344,7 +5344,7 @@
       "label": "Community 24 - \"Community 24\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L161",
+      "source_location": "L163",
       "id": "memories_cycle_repo_map_community_24_community_24",
       "community": 37,
       "norm_label": "community 24 - \"community 24\""
@@ -5353,7 +5353,7 @@
       "label": "Community 25 - \"Community 25\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L165",
+      "source_location": "L167",
       "id": "memories_cycle_repo_map_community_25_community_25",
       "community": 37,
       "norm_label": "community 25 - \"community 25\""
@@ -5362,7 +5362,7 @@
       "label": "Community 26 - \"Community 26\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L169",
+      "source_location": "L171",
       "id": "memories_cycle_repo_map_community_26_community_26",
       "community": 37,
       "norm_label": "community 26 - \"community 26\""
@@ -5371,7 +5371,7 @@
       "label": "Community 27 - \"Community 27\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L173",
+      "source_location": "L175",
       "id": "memories_cycle_repo_map_community_27_community_27",
       "community": 37,
       "norm_label": "community 27 - \"community 27\""
@@ -5380,7 +5380,7 @@
       "label": "Community 28 - \"Community 28\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L177",
+      "source_location": "L179",
       "id": "memories_cycle_repo_map_community_28_community_28",
       "community": 37,
       "norm_label": "community 28 - \"community 28\""
@@ -5389,7 +5389,7 @@
       "label": "Community 29 - \"Community 29\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L181",
+      "source_location": "L183",
       "id": "memories_cycle_repo_map_community_29_community_29",
       "community": 37,
       "norm_label": "community 29 - \"community 29\""
@@ -5398,7 +5398,7 @@
       "label": "Community 30 - \"Community 30\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L185",
+      "source_location": "L187",
       "id": "memories_cycle_repo_map_community_30_community_30",
       "community": 37,
       "norm_label": "community 30 - \"community 30\""
@@ -5407,7 +5407,7 @@
       "label": "Community 31 - \"Community 31\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L189",
+      "source_location": "L191",
       "id": "memories_cycle_repo_map_community_31_community_31",
       "community": 37,
       "norm_label": "community 31 - \"community 31\""
@@ -5416,16 +5416,25 @@
       "label": "Community 32 - \"Community 32\"",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L193",
+      "source_location": "L195",
       "id": "memories_cycle_repo_map_community_32_community_32",
       "community": 37,
       "norm_label": "community 32 - \"community 32\""
     },
     {
+      "label": "Community 37 - \"Community 37\"",
+      "file_type": "document",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L199",
+      "id": "memories_cycle_repo_map_community_37_community_37",
+      "community": 37,
+      "norm_label": "community 37 - \"community 37\""
+    },
+    {
       "label": "Knowledge Gaps",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L197",
+      "source_location": "L203",
       "id": "memories_cycle_repo_map_knowledge_gaps",
       "community": 37,
       "norm_label": "knowledge gaps"
@@ -5434,7 +5443,7 @@
       "label": "Suggested Questions",
       "file_type": "document",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L202",
+      "source_location": "L208",
       "id": "memories_cycle_repo_map_suggested_questions",
       "community": 37,
       "norm_label": "suggested questions"
@@ -5465,6 +5474,15 @@
       "id": "code_generator_memories_current_issue_md",
       "community": 36,
       "norm_label": "current-issue.md"
+    },
+    {
+      "label": "Communities (49 total, 7 thin omitted)",
+      "file_type": "document",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L79",
+      "community": 37,
+      "norm_label": "communities (49 total, 7 thin omitted)",
+      "id": "memories_cycle_repo_map_communities_49_total_7_thin_omitted"
     },
     {
       "label": "Birthday Paradox: analytical + Monte Carlo study with animated plots.",
@@ -5507,7 +5525,7 @@
       "file_type": "rationale",
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L24",
-      "community": 22,
+      "community": 1,
       "norm_label": "generate publication-quality plots and gifs for the birthday paradox.",
       "id": "visualization_matplotlib_viz_rationale_24"
     },
@@ -5543,7 +5561,7 @@
       "file_type": "rationale",
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L231",
-      "community": 20,
+      "community": 1,
       "norm_label": "gif: probability curve drawing itself frame-by-frame.",
       "id": "visualization_matplotlib_viz_rationale_231"
     },
@@ -5552,7 +5570,7 @@
       "file_type": "rationale",
       "source_file": "src/birthday/visualization/matplotlib_viz.py",
       "source_location": "L295",
-      "community": 20,
+      "community": 1,
       "norm_label": "gif: people enter a room one at a time, each gets a random birthday;         the",
       "id": "visualization_matplotlib_viz_rationale_295"
     },
@@ -14243,9 +14261,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "code_generator_memories_cycle_repo_map_md",
-      "target": "memories_cycle_repo_map_graph_report_birthday_paradox_2026_05_25",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_graph_report_birthday_paradox_2026_05_25"
     },
     {
       "relation": "contains",
@@ -14253,9 +14271,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_graph_report_birthday_paradox_2026_05_25",
-      "target": "memories_cycle_repo_map_corpus_check",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_corpus_check"
     },
     {
       "relation": "contains",
@@ -14263,9 +14281,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_graph_report_birthday_paradox_2026_05_25",
-      "target": "memories_cycle_repo_map_summary",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_summary"
     },
     {
       "relation": "contains",
@@ -14273,9 +14291,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_graph_report_birthday_paradox_2026_05_25",
-      "target": "memories_cycle_repo_map_graph_freshness",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_graph_freshness"
     },
     {
       "relation": "contains",
@@ -14283,9 +14301,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_graph_report_birthday_paradox_2026_05_25",
-      "target": "memories_cycle_repo_map_community_hubs_navigation",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_hubs_navigation"
     },
     {
       "relation": "contains",
@@ -14293,9 +14311,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_graph_report_birthday_paradox_2026_05_25",
-      "target": "memories_cycle_repo_map_god_nodes_most_connected_your_core_abstractions",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_god_nodes_most_connected_your_core_abstractions"
     },
     {
       "relation": "contains",
@@ -14303,18 +14321,18 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_graph_report_birthday_paradox_2026_05_25",
-      "target": "memories_cycle_repo_map_surprising_connections_you_probably_didn_t_know_these",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_surprising_connections_you_probably_didn_t_know_these"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": ".code-generator/memories/cycle-repo-map.md",
-      "source_location": "L79",
+      "source_location": "L81",
       "weight": 1.0,
       "source": "memories_cycle_repo_map_graph_report_birthday_paradox_2026_05_25",
-      "target": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
+      "target": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
       "confidence_score": 1.0
     },
     {
@@ -14323,9 +14341,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L197",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_graph_report_birthday_paradox_2026_05_25",
-      "target": "memories_cycle_repo_map_knowledge_gaps",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_knowledge_gaps"
     },
     {
       "relation": "contains",
@@ -14333,8 +14351,318 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L202",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_graph_report_birthday_paradox_2026_05_25",
-      "target": "memories_cycle_repo_map_suggested_questions",
+      "target": "memories_cycle_repo_map_suggested_questions"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "memories_cycle_repo_map_graph_report_birthday_paradox_2026_05_25",
+      "target": "memories_cycle_repo_map_communities_49_total_7_thin_omitted"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_0_community_0",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_1_community_1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_2_community_2",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_3_community_3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_4_community_4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L103",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_5_community_5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L107",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_6_community_6",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_11_community_11",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_12_community_12",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_13_community_13",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_14_community_14",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_15_community_15",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_16_community_16",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_17_community_17",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_18_community_18",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L143",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_19_community_19",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_20_community_20",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_21_community_21",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_22_community_22",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_23_community_23",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_24_community_24",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_25_community_25",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_26_community_26",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_27_community_27",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_28_community_28",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_29_community_29",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L187",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_30_community_30",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L191",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_31_community_31",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L195",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_32_community_32",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".code-generator/memories/cycle-repo-map.md",
+      "source_location": "L199",
+      "weight": 1.0,
+      "source": "memories_cycle_repo_map_communities_50_total_8_thin_omitted",
+      "target": "memories_cycle_repo_map_community_37_community_37",
       "confidence_score": 1.0
     },
     {
@@ -14343,9 +14671,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_0_community_0",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_0_community_0"
     },
     {
       "relation": "contains",
@@ -14353,9 +14681,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_1_community_1",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_1_community_1"
     },
     {
       "relation": "contains",
@@ -14363,9 +14691,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_2_community_2",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_2_community_2"
     },
     {
       "relation": "contains",
@@ -14373,9 +14701,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_3_community_3",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_3_community_3"
     },
     {
       "relation": "contains",
@@ -14383,9 +14711,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_4_community_4",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_4_community_4"
     },
     {
       "relation": "contains",
@@ -14393,9 +14721,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_5_community_5",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_5_community_5"
     },
     {
       "relation": "contains",
@@ -14403,9 +14731,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_6_community_6",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_6_community_6"
     },
     {
       "relation": "contains",
@@ -14413,9 +14741,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_11_community_11",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_11_community_11"
     },
     {
       "relation": "contains",
@@ -14423,9 +14751,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_12_community_12",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_12_community_12"
     },
     {
       "relation": "contains",
@@ -14433,9 +14761,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_13_community_13",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_13_community_13"
     },
     {
       "relation": "contains",
@@ -14443,9 +14771,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L121",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_14_community_14",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_14_community_14"
     },
     {
       "relation": "contains",
@@ -14453,9 +14781,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_15_community_15",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_15_community_15"
     },
     {
       "relation": "contains",
@@ -14463,9 +14791,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_16_community_16",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_16_community_16"
     },
     {
       "relation": "contains",
@@ -14473,9 +14801,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L133",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_17_community_17",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_17_community_17"
     },
     {
       "relation": "contains",
@@ -14483,9 +14811,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L137",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_18_community_18",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_18_community_18"
     },
     {
       "relation": "contains",
@@ -14493,9 +14821,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L141",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_19_community_19",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_19_community_19"
     },
     {
       "relation": "contains",
@@ -14503,9 +14831,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_20_community_20",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_20_community_20"
     },
     {
       "relation": "contains",
@@ -14513,9 +14841,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_21_community_21",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_21_community_21"
     },
     {
       "relation": "contains",
@@ -14523,9 +14851,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L153",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_22_community_22",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_22_community_22"
     },
     {
       "relation": "contains",
@@ -14533,9 +14861,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L157",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_23_community_23",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_23_community_23"
     },
     {
       "relation": "contains",
@@ -14543,9 +14871,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L161",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_24_community_24",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_24_community_24"
     },
     {
       "relation": "contains",
@@ -14553,9 +14881,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L165",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_25_community_25",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_25_community_25"
     },
     {
       "relation": "contains",
@@ -14563,9 +14891,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L169",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_26_community_26",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_26_community_26"
     },
     {
       "relation": "contains",
@@ -14573,9 +14901,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L173",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_27_community_27",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_27_community_27"
     },
     {
       "relation": "contains",
@@ -14583,9 +14911,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L177",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_28_community_28",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_28_community_28"
     },
     {
       "relation": "contains",
@@ -14593,9 +14921,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L181",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_29_community_29",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_29_community_29"
     },
     {
       "relation": "contains",
@@ -14603,9 +14931,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L185",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_30_community_30",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_30_community_30"
     },
     {
       "relation": "contains",
@@ -14613,9 +14941,9 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L189",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_31_community_31",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_31_community_31"
     },
     {
       "relation": "contains",
@@ -14623,11 +14951,11 @@
       "source_file": ".code-generator/memories/cycle-repo-map.md",
       "source_location": "L193",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "memories_cycle_repo_map_communities_49_total_7_thin_omitted",
-      "target": "memories_cycle_repo_map_community_32_community_32",
-      "confidence_score": 1.0
+      "target": "memories_cycle_repo_map_community_32_community_32"
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "185e03dd49bdc5fb9b0b9e4725d707c19a70f90b"
+  "built_at_commit": "9f63584e7926b7ff06a3652f34b5ea9af114b94c"
 }
