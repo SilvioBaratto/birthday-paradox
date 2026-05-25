@@ -150,6 +150,74 @@ class TestCliPlotCommand:
             assert mock_plot.call_args.kwargs["n_trials"] >= 50000
 
 
+class TestCliAnalyze:
+    def test_analyze_prints_probabilities(self) -> None:
+        runner = CliRunner()
+        result = runner.invoke(cli, ["analyze", "--people", "10"])
+        assert result.exit_code == 0, result.output
+        assert "P(match)" in result.output
+
+    def test_analyze_respects_days_option(self) -> None:
+        runner = CliRunner()
+        result = runner.invoke(cli, ["analyze", "--days", "10", "--people", "5"])
+        assert result.exit_code == 0, result.output
+        assert "D = 10" in result.output
+        assert "n = 5" in result.output
+
+
+class TestCliSimulate:
+    def test_simulate_prints_empirical_result(self) -> None:
+        runner = CliRunner()
+        result = runner.invoke(
+            cli, ["simulate", "--people", "10", "--trials", "100"]
+        )
+        assert result.exit_code == 0, result.output
+        assert "Empirical" in result.output
+
+    def test_simulate_respects_seed(self) -> None:
+        runner = CliRunner()
+        result = runner.invoke(
+            cli, ["simulate", "--people", "10", "--trials", "100", "--seed", "99"]
+        )
+        assert result.exit_code == 0, result.output
+        assert "seed = 99" in result.output
+
+
+class TestCliReport:
+    def test_report_prints_table(self) -> None:
+        runner = CliRunner()
+        result = runner.invoke(cli, ["report"])
+        assert result.exit_code == 0, result.output
+        assert "exact" in result.output.lower()
+
+    def test_report_respects_days(self) -> None:
+        runner = CliRunner()
+        result = runner.invoke(cli, ["report", "--days", "10"])
+        assert result.exit_code == 0, result.output
+
+
+class TestCliAnimate:
+    def test_animate_probability_buildup(self, tmp_path: Path) -> None:
+        runner = CliRunner()
+        result = runner.invoke(
+            cli,
+            [
+                "animate", "probability_buildup",
+                "--max-people", "10",
+                "-o", str(tmp_path),
+                "--fps", "2",
+            ],
+        )
+        assert result.exit_code == 0, result.output
+        assert (tmp_path / "probability_buildup.gif").exists()
+
+    def test_animate_invalid_name_returns_error(self) -> None:
+        runner = CliRunner()
+        result = runner.invoke(cli, ["animate", "not_a_name"])
+        assert result.exit_code != 0
+        assert "Invalid value" in result.output or "not_a_name" in result.output
+
+
 class TestCliAllCommand:
     def test_all_generates_ten_files(self, tmp_path: Path) -> None:
         runner = CliRunner()

@@ -8,10 +8,8 @@ from pathlib import Path
 
 import click
 
-from birthday.core.config import BirthdayConfig
-from birthday.math.probability import BirthdayProbability
-from birthday.simulation.monte_carlo import MonteCarloSimulator
-from birthday.visualization.matplotlib_viz import MatplotlibVisualizer
+from birthday.di.container import Container
+from birthday.reporting.console import ConsoleReporter
 
 
 def _setup_logging(verbose: bool) -> None:
@@ -44,8 +42,8 @@ def _config_options(f):  # type: ignore[no-untyped-def]
 @click.option("-n", "--people", default=23, show_default=True, help="Group size to analyse")
 def analyze(days: int, max_people: int, people: int) -> None:
     """Print analytical probabilities for a given group size."""
-    config = BirthdayConfig(days_per_year=days, max_people=max_people)
-    prob = BirthdayProbability(config)
+    container = Container(days=days, max_people=max_people)
+    prob = container.probability()
     exact = prob.prob_match_exact(people)
     approx = prob.prob_match_approx(people)
     expected = prob.expected_collisions(people)
@@ -69,9 +67,9 @@ def analyze(days: int, max_people: int, people: int) -> None:
 @click.option("--seed", default=42, show_default=True, help="Random seed")
 def simulate(days: int, max_people: int, people: int, trials: int, seed: int) -> None:
     """Run a Monte Carlo simulation and compare against theory."""
-    config = BirthdayConfig(days_per_year=days, max_people=max_people)
-    sim = MonteCarloSimulator(config, seed=seed)
-    prob = BirthdayProbability(config)
+    container = Container(days=days, max_people=max_people, seed=seed)
+    sim = container.simulator()
+    prob = container.probability()
 
     result = sim.simulate_group(people, trials)
     theoretical = prob.prob_match_exact(people)
@@ -99,8 +97,10 @@ def plot(
     no_animations: bool, no_mp4: bool,
 ) -> None:
     """Generate all PNG plots (and GIF animations unless --no-animations)."""
-    config = BirthdayConfig(days_per_year=days, max_people=max_people)
-    viz = MatplotlibVisualizer(config, output_dir=output, seed=seed)
+    container = Container(
+        days=days, max_people=max_people, output_dir=output, seed=seed,
+    )
+    viz = container.visualizer()
 
     paths: list[Path] = []
     for p in (
@@ -140,9 +140,11 @@ def plot(
 @click.option("--no-mp4", is_flag=True, help="Skip MP4 animations")
 def all(days: int, max_people: int, output: Path, trials: int, seed: int, no_mp4: bool) -> None:
     """Run analyze + plot + animations end-to-end."""
-    config = BirthdayConfig(days_per_year=days, max_people=max_people)
-    prob = BirthdayProbability(config)
-    viz = MatplotlibVisualizer(config, output_dir=output, seed=seed)
+    container = Container(
+        days=days, max_people=max_people, output_dir=output, seed=seed,
+    )
+    prob = container.probability()
+    viz = container.visualizer()
 
     click.echo(f"\nMedian (50%) group size: {prob.median_group_size()}")
     click.echo(f"Generating plots + animations in {output} ...\n")
@@ -152,6 +154,63 @@ def all(days: int, max_people: int, output: Path, trials: int, seed: int, no_mp4
     for p in produced:
         click.echo(f"  • {p.name}")
     click.echo("")
+
+
+@cli.command()
+@_config_options
+@click.argument(
+    "name",
+    type=click.Choice(
+        ["probability_buildup", "room_filling", "convergence", "k_collision"],
+        case_sensitive=False,
+    ),
+)
+@click.option(
+    "-o", "--output", type=click.Path(path_type=Path), default="output", show_default=True,
+)
+@click.option("--fps", default=8, show_default=True, help="Animation frames per second")
+@click.option(
+    "-t", "--trials", default=5_000, show_default=True,
+    help="MC trials for convergence/k-collision",
+)
+@click.option("--seed", default=42, show_default=True, help="Random seed")
+@click.option("--no-mp4", is_flag=True, help="Skip MP4 output")
+def animate(
+    days: int, max_people: int, name: str, output: Path,
+    fps: int, trials: int, seed: int, no_mp4: bool,
+) -> None:
+    """Render a single animation by name (GIF + optional MP4)."""
+    container = Container(
+        days=days, max_people=max_people, output_dir=output, seed=seed,
+    )
+    viz = container.visualizer()
+
+    dispatch: dict[str, list[Path]] = {
+        "probability_buildup": viz.animate_probability_buildup(fps=fps, no_mp4=no_mp4),
+        "room_filling": viz.animate_room_filling(fps=fps, seed=seed, no_mp4=no_mp4),
+        "convergence": viz.animate_simulation_convergence(
+            max_trials=trials, fps=fps, no_mp4=no_mp4,
+        ),
+        "k_collision": viz.animate_k_collision(n_trials=trials, fps=fps, no_mp4=no_mp4),
+    }
+    paths = dispatch[name.lower()]
+
+    click.echo("")
+    click.echo(f"Generated {len(paths)} file(s) in {output}:")
+    for p in paths:
+        click.echo(f"  • {p.name}")
+    click.echo("")
+
+
+@cli.command()
+@_config_options
+def report(days: int, max_people: int) -> None:
+    """Print a checkpoint table summarising the Birthday Paradox."""
+    container = Container(days=days, max_people=max_people)
+    prob = container.probability()
+    reporter = ConsoleReporter(prob)
+    click.echo("")
+    click.echo(reporter.report())
 
 
 def main() -> None:

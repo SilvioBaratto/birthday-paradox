@@ -1,8 +1,8 @@
 {
   "mode": "multi-cycle",
   "started_at": "2026-05-25T10:54:46Z",
-  "updated_at": "2026-05-25T13:02:54Z",
-  "current_cycle": 2,
+  "updated_at": "2026-05-25T13:57:15Z",
+  "current_cycle": 3,
   "cycles": [
     {
       "id": 1,
@@ -206,8 +206,8 @@
       "name": "MP4 Export & CLI",
       "milestone_number": 2,
       "milestone_title": "Cycle 2 \u2014 MP4 Export & CLI",
-      "status": "open",
-      "phase": 65,
+      "status": "completed",
+      "phase": 7,
       "issues": [
         {
           "number": 5,
@@ -337,17 +337,28 @@
           "cache_write_1h": 0,
           "compaction_events": 0,
           "clear_events": 0
+        },
+        "phase7": {
+          "input": 35380,
+          "output": 1618,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 1,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
         }
       },
       "started_at": "2026-05-25T11:51:46Z",
-      "finished_at": null,
+      "finished_at": "2026-05-25T13:03:23Z",
       "cache_telemetry": {
-        "input": 8242269,
-        "output": 57857,
+        "input": 8277649,
+        "output": 59475,
         "cache_read": 0,
         "cache_write": 0,
         "cache_hit_pct": 0.0,
-        "wall_seconds": 1851.6612762919976
+        "wall_seconds": 1878.976938125008
       },
       "phase2_batch_id": null,
       "ollama_model": "kimi-k2.6:cloud",
@@ -380,11 +391,110 @@
     {
       "id": 3,
       "name": "Reporting, DI & Tests",
-      "milestone_number": null,
+      "milestone_number": 3,
       "milestone_title": "Cycle 3 \u2014 Reporting, DI & Tests",
       "status": "open",
-      "phase": 0,
-      "issues": [],
+      "phase": 65,
+      "issues": [
+        {
+          "number": 9,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:high",
+            "phase:implement",
+            "agent:python-pro",
+            "area:reporting"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: create reporting/console.py with pretty-printed checkpoint tables and add birthday report subcommand"
+        },
+        {
+          "number": 10,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:high",
+            "phase:implement",
+            "agent:python-pro",
+            "area:di"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: create DI container in di/container.py and refactor CLI to use service wiring"
+        },
+        {
+          "number": 11,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:high",
+            "area:tests",
+            "phase:implement",
+            "agent:python-pro"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: add tests/test_probability.py with exact values, monotonicity, and boundary assertions"
+        },
+        {
+          "number": 12,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:high",
+            "area:tests",
+            "phase:implement",
+            "agent:python-pro"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: add tests/test_simulation.py with empirical convergence to theoretical within 4\u03c3"
+        },
+        {
+          "number": 13,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:high",
+            "area:tests",
+            "phase:implement",
+            "agent:python-pro"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: add tests/test_visualization.py with batch file existence and size assertions"
+        },
+        {
+          "number": 14,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:high",
+            "area:cli",
+            "phase:implement",
+            "agent:python-pro"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: implement birthday animate <name> CLI subcommand with DI wiring"
+        },
+        {
+          "number": 15,
+          "status": "closed",
+          "agent": "python-pro",
+          "labels": [
+            "priority:high",
+            "area:tests",
+            "phase:implement",
+            "agent:python-pro"
+          ],
+          "reviewed": true,
+          "comments": "",
+          "title": "feat: extend tests/test_cli.py with CliRunner smoke tests for all subcommands"
+        }
+      ],
       "commit_sha": null,
       "depends_on": [
         2
@@ -400,25 +510,99 @@
           "effort": "low"
         }
       ],
-      "base_commit": null,
-      "token_usage": {},
-      "started_at": null,
+      "base_commit": "a4361775a45a2aa5c22230f9a7a9b1483166c8c8",
+      "token_usage": {
+        "phase1": {
+          "input": 1487826,
+          "output": 24199,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 53,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase2": {
+          "input": 390457,
+          "output": 10580,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 28,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase3_4": {
+          "input": 12260605,
+          "output": 36824,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 148,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase5": {
+          "input": 0,
+          "output": 0,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 0,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        },
+        "phase6": {
+          "input": 570065,
+          "output": 1597,
+          "cache_read": 0,
+          "cache_write": 0,
+          "num_turns": 17,
+          "cache_write_5m": 0,
+          "cache_write_1h": 0,
+          "compaction_events": 0,
+          "clear_events": 0
+        }
+      },
+      "started_at": "2026-05-25T13:03:25Z",
       "finished_at": null,
       "cache_telemetry": {
-        "input": 0,
-        "output": 0,
+        "input": 14708953,
+        "output": 73200,
         "cache_read": 0,
         "cache_write": 0,
         "cache_hit_pct": 0.0,
-        "wall_seconds": 0
+        "wall_seconds": 3199.495730915005
       },
       "phase2_batch_id": null,
       "ollama_model": "kimi-k2.6:cloud",
       "gemini_model": null,
       "codex_model": null,
-      "cache_prewarmed": false,
-      "cache_ttl_probe": null,
-      "phase6_5": null,
+      "cache_prewarmed": true,
+      "cache_ttl_probe": "5m",
+      "phase6_5": {
+        "attempt": 0,
+        "last_tier": "DONE",
+        "tiers_passed": [
+          "T0"
+        ],
+        "tiers_failed": [
+          "T1",
+          "T2"
+        ],
+        "tiers_skipped": [
+          "T3",
+          "T4"
+        ],
+        "skip_reasons": {
+          "T3": "no frontend",
+          "T4": "no docker"
+        }
+      },
       "vigil_triggered": false,
       "phase8": null
     },
@@ -487,7 +671,7 @@
     }
   },
   "session_mode": "shared",
-  "client_alive_at": "2026-05-25T11:51:47+00:00",
+  "client_alive_at": "2026-05-25T13:03:26+00:00",
   "phase2_batch_id": null,
   "repo": {
     "host": "github.com",

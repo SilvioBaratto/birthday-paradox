@@ -62,7 +62,7 @@ where = ["src"]
 testpaths = ["tests"]
 python_files = ["test_*.py"]
 python_functions = ["test_*"]
-addopts = "-v --tb=short"
+addopts = "-v --tb=short --cov=src/birthday --cov-report=term-missing"
 
 [tool.mypy]
 python_version = "3.10"

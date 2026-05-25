@@ -1,7 +1,7 @@
 [
   {
-    "issue_number": 5,
-    "title": "feat: configure AnimationWriter for MP4 production settings and ffmpeg discovery",
+    "issue_number": 9,
+    "title": "feat: create reporting/console.py with pretty-printed checkpoint tables and add birthday report subcommand",
     "tests_passed": true,
     "committed": false,
     "feature_done": false,
@@ -9,8 +9,8 @@
     "professionalized": false
   },
   {
-    "issue_number": 6,
-    "title": "feat: emit both GIF and MP4 from all animation methods",
+    "issue_number": 10,
+    "title": "feat: create DI container in di/container.py and refactor CLI to use service wiring",
     "tests_passed": true,
     "committed": false,
     "feature_done": false,
@@ -18,21 +18,48 @@
     "professionalized": false
   },
   {
-    "issue_number": 7,
-    "title": "feat: add --no-mp4 flag to birthday plot and birthday all",
-    "tests_passed": false,
+    "issue_number": 11,
+    "title": "feat: add tests/test_probability.py with exact values, monotonicity, and boundary assertions",
+    "tests_passed": true,
     "committed": false,
     "feature_done": false,
-    "runtime_verified": false,
+    "runtime_verified": true,
     "professionalized": false
   },
   {
-    "issue_number": 8,
-    "title": "feat: add birthday animate <name> CLI subcommand",
-    "tests_passed": false,
+    "issue_number": 12,
+    "title": "feat: add tests/test_simulation.py with empirical convergence to theoretical within 4\u03c3",
+    "tests_passed": true,
     "committed": false,
     "feature_done": false,
-    "runtime_verified": false,
+    "runtime_verified": true,
+    "professionalized": false
+  },
+  {
+    "issue_number": 13,
+    "title": "feat: add tests/test_visualization.py with batch file existence and size assertions",
+    "tests_passed": true,
+    "committed": false,
+    "feature_done": false,
+    "runtime_verified": true,
+    "professionalized": false
+  },
+  {
+    "issue_number": 14,
+    "title": "feat: implement birthday animate <name> CLI subcommand with DI wiring",
+    "tests_passed": true,
+    "committed": false,
+    "feature_done": false,
+    "runtime_verified": true,
+    "professionalized": false
+  },
+  {
+    "issue_number": 15,
+    "title": "feat: extend tests/test_cli.py with CliRunner smoke tests for all subcommands",
+    "tests_passed": true,
+    "committed": false,
+    "feature_done": false,
+    "runtime_verified": true,
     "professionalized": false
   }
 ]

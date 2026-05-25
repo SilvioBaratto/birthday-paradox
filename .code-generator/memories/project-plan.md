@@ -1,4 +1,7 @@
-- #5 [priority:high] feat: configure AnimationWriter for MP4 production settings and ffmpeg discovery — agent: python-pro
-- #6 [priority:high] feat: emit both GIF and MP4 from all animation methods — agent: python-pro
-- #7 [priority:medium] feat: add --no-mp4 flag to birthday plot and birthday all — agent: python-pro
-- #8 [priority:medium] feat: add birthday animate <name> CLI subcommand — agent: python-pro
+- #9 [priority:high] feat: create reporting/console.py with pretty-printed checkpoint tables and add birthday report subcommand — agent: python-pro
+- #10 [priority:high] feat: create DI container in di/container.py and refactor CLI to use service wiring — agent: python-pro
+- #11 [priority:high] feat: add tests/test_probability.py with exact values, monotonicity, and boundary assertions — agent: python-pro
+- #12 [priority:high] feat: add tests/test_simulation.py with empirical convergence to theoretical within 4σ — agent: python-pro
+- #13 [priority:high] feat: add tests/test_visualization.py with batch file existence and size assertions — agent: python-pro
+- #14 [priority:high] feat: implement birthday animate <name> CLI subcommand with DI wiring — agent: python-pro
+- #15 [priority:high] feat: extend tests/test_cli.py with CliRunner smoke tests for all subcommands — agent: python-pro
