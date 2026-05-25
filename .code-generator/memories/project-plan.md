@@ -1,3 +1,0 @@
-- #16 [priority:medium] feat(gitignore): add output/*.mp4 to .gitignore to prevent large binaries from being committed — agent: python-pro
-- #17 [priority:high] feat(ci): create GitHub Actions workflow for lint, mypy, pytest on Python 3.10/3.11/3.12 with release artifacts — agent: python-pro
-- #18 [priority:medium] feat(docs): update README to v1.1 with MP4 links, imageio-ffmpeg docs, and birthday animate examples — agent: python-pro

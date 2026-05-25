@@ -1,4 +1,3 @@
-# code-generator-managed: true
 name: release
 "on":
   push:

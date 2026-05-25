@@ -219,3 +219,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Code generator scratch (local-only orchestration state)
+.code-generator/
+
